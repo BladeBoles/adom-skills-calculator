@@ -56,10 +56,10 @@
 
 <script setup>
 import { playableRaces, playableClasses, skillsList } from '../tables/skills.js'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
-const selectedClass = 'Archer'
-const selectedRace = 'Dark Elf'
+const selectedClass = ref('Archer')
+const selectedRace = ref('Dark Elf')
 
 if (!playableRaces.includes('No Race')) {
   playableRaces.push('No Race')
@@ -77,15 +77,15 @@ const startingSkills = computed(() => {
   ]
   skillsList.forEach((skill) => {
     if (
-      skill.races.includes(selectedRace || 'All') &&
-      skill.classes.includes(selectedClass || 'All')
+      skill.races.includes(selectedRace.value || 'All') &&
+      skill.classes.includes(selectedClass.value || 'All')
     ) {
       let skillObject = { name: `${skill.name}`, source: 'both' }
       startingSkillsListArray.push(skillObject)
-    } else if (skill.races.includes(selectedRace)) {
+    } else if (skill.races.includes(selectedRace.value)) {
       let skillObject = { name: skill.name, source: 'race' }
       startingSkillsListArray.push(skillObject)
-    } else if (skill.classes.includes(selectedClass)) {
+    } else if (skill.classes.includes(selectedClass.value)) {
       let skillObject = { name: skill.name, source: 'class' }
       startingSkillsListArray.push(skillObject)
     }
