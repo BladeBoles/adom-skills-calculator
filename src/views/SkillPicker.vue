@@ -2,7 +2,7 @@
   <div class="double-columns-container">
     <form class="skill-picker-form" @submit.prevent="submit">
       <div class="columns-component-div">
-        <SkillPickerColumn @skill-added="updateWantedSkills($event)" />
+        <SkillPickerColumn @skill-added="updateWantedSkills" />
       </div>
 
       <CalculateCombosButton @click="calculateCombos">Calculate Combos</CalculateCombosButton>
@@ -23,6 +23,7 @@ const allCombos = ref([])
 const possibleCombos = ref([])
 
 const updateWantedSkills = (newSkillsList) => {
+  console.log('🚀 ~ file: SkillPicker.vue:26 ~ updateWantedSkills ~ newSkillsList:', newSkillsList)
   wantedSkills.value = newSkillsList
 }
 
@@ -31,6 +32,11 @@ const calculateCombos = () => {
 }
 
 const findValidCombos = (desiredSkills = []) => {
+  console.log(
+    '🚀 ~ file: SkillPicker.vue:34 ~ findValidCombos ~ desiredSkills:',
+    desiredSkills,
+    allCombos.value
+  )
   try {
     const comboPossibilities = []
     allCombos.value.forEach((combination) => {
@@ -43,14 +49,19 @@ const findValidCombos = (desiredSkills = []) => {
         comboPossibilities.push(combination)
       }
     })
+    console.log(
+      '🚀 ~ file: SkillPicker.vue:41 ~ findValidCombos ~ comboPossibilities:',
+      comboPossibilities
+    )
     possibleCombos.value = comboPossibilities
   } catch (error) {
     console.log('error: ', error)
   }
 }
 
-onMounted(() => {
-  allCombos.value = allCombinations()
+onMounted(async () => {
+  allCombos.value = await allCombinations()
+  console.log('🚀 ~ file: SkillPicker.vue:55 ~ onMounted ~ value:', allCombos.value)
 })
 </script>
 

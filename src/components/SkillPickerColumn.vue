@@ -20,6 +20,7 @@ const emit = defineEmits(['skill-added'])
 const chosenSkills = ref([])
 
 const showChosen = (chosenSkill) => {
+  console.log('🚀 ~ file: SkillPickerColumn.vue:23 ~ showChosen ~ chosenSkill:', chosenSkill)
   if (chosenSkills.value.filter((skill) => skill.name === chosenSkill).length === 0) {
     chosenSkills.value.push({ name: chosenSkill })
   }

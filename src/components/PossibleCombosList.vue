@@ -9,10 +9,7 @@
       </div>
 
       <ul class="race-list" v-if="!hiddenRaces.includes(race)">
-        <li
-          v-for="(combo, index) in combosForRace(race)"
-          :key="`${combo}${index}`"
-        >
+        <li v-for="(combo, index) in combosForRace(race)" :key="`${combo}${index}`">
           {{ combo.playableClass }}
         </li>
       </ul>
@@ -24,6 +21,12 @@
 <script setup>
 import { ref, computed } from 'vue'
 
+const props = defineProps({
+  combosList: {
+    type: Array,
+    required: true
+  }
+})
 const hiddenRaces = ref([
   'Dark Elf',
   'Drakeling',
@@ -40,10 +43,9 @@ const hiddenRaces = ref([
   'No Race'
 ])
 
-const combosList = ref([])
 const uniqueRaces = computed(() => {
   const races = []
-  combosList.value.forEach((combo) => {
+  props.combosList.forEach((combo) => {
     if (!races.includes(combo.race)) {
       races.push(combo.race)
     }
@@ -52,7 +54,7 @@ const uniqueRaces = computed(() => {
 })
 
 const combosForRace = (race) => {
-  return combosList.value.filter((combo) => combo.race === race)
+  return props.combosList.filter((combo) => combo.race === race)
 }
 
 const toggleRaceVisibility = (race) => {
