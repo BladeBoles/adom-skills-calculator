@@ -59,6 +59,32 @@ const findValidCombos = (desiredSkills = []) => {
   }
 }
 
+/* TODO: Modify one allCombinations Array to be:
+  {
+    playableRace: string
+    playableClass: string
+    raceSkills: string[]
+    classSkills: string[]
+  }[]
+
+  Then display icon(s) by each skill showing where it came from.
+  On hover the icon has explanation.
+
+  This array could be a single source of truth.  But we could also have 
+
+  {
+    playableRace: string
+    skills: string[]
+  }[]
+  and
+  {
+    playableClass: string
+    skills: string[]
+  }[]
+  For faster lookup on the calculator?
+
+*/
+
 onMounted(async () => {
   allCombos.value = allCombinations
   console.log('🚀 ~ file: SkillPicker.vue:55 ~ onMounted ~ value:', JSON.stringify(allCombos.value))
