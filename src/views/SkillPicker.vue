@@ -60,8 +60,8 @@ const findValidCombos = (desiredSkills = []) => {
 }
 
 onMounted(async () => {
-  allCombos.value = await allCombinations()
-  console.log('🚀 ~ file: SkillPicker.vue:55 ~ onMounted ~ value:', allCombos.value)
+  allCombos.value = allCombinations
+  console.log('🚀 ~ file: SkillPicker.vue:55 ~ onMounted ~ value:', JSON.stringify(allCombos.value))
 })
 </script>
 
