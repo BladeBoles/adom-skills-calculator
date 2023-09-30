@@ -1,19 +1,36 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/skill-picker" class="nav-link">Picker</RouterLink>
-        <RouterLink to="/skill-calculator" class="nav-link">Calculator</RouterLink>
+        <RouterLink
+          :class="{ 'current-route': isCurrentRoute('/skill-picker') }"
+          to="/skill-picker"
+          class="nav-link"
+        >
+          Picker
+        </RouterLink>
+        <RouterLink
+          :class="{ 'current-route': isCurrentRoute('/skill-calculator') }"
+          to="/skill-calculator"
+          class="nav-link"
+        >
+          Calculator
+        </RouterLink>
       </nav>
     </div>
   </header>
 
   <RouterView />
 </template>
+
+<script setup>
+import { RouterLink, RouterView, useRoute } from 'vue-router'
+
+const isCurrentRoute = (routePath) => {
+  const route = useRoute()
+  return route.path === routePath
+}
+</script>
 
 <style scoped>
 .wrapper {
@@ -29,6 +46,7 @@ nav {
   background-color: white;
   color: #333;
   padding: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .nav-link {
@@ -43,5 +61,9 @@ nav {
 
 .nav-link:hover {
   background-color: #ddd;
+}
+
+.current-route {
+  text-decoration: 2px solid #333 underline;
 }
 </style>
