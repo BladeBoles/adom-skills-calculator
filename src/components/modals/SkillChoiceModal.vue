@@ -21,7 +21,7 @@
     </transition>
 
     <button class="add-skill-button" @click.prevent="isOpen = !isOpen">
-      <i id="plus-circle" class="fa-solid fa-square-minus" />
+      <i id="plus-circle" class="fa-solid fa-circle-plus" />
       <span id="add-skill-text">Add Skill</span>
     </button>
   </div>
@@ -44,10 +44,16 @@ const chooseSkill = (chosenSkill) => {
 
 <style scoped>
 .add-skill-button {
-  border: none;
-  background-color: transparent;
+  border: 2px solid transparent;
   margin: 15px 0px;
   font-size: 20px;
+  transition: border-color 0.2s ease-in-out;
+  background-color: white;
+}
+
+.add-skill-button:hover {
+  cursor: pointer;
+  border-color: rgba(192, 192, 192, 0.3);
 }
 
 .choice-list-ul {
@@ -72,16 +78,8 @@ const chooseSkill = (chosenSkill) => {
 
 #plus-circle {
   font-size: 24px;
-  margin: 0px 10px;
-}
-
-#plus-circle:hover {
+  margin-right: 10px;
   color: green;
-  cursor: pointer;
-}
-
-#add-skill-text {
-  padding-left: 0px;
 }
 
 .modal {

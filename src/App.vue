@@ -6,8 +6,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/skill-picker">Picker</RouterLink>
-        <RouterLink to="/skill-calculator">Calculator</RouterLink>
+        <RouterLink to="/skill-picker" class="nav-link">Picker</RouterLink>
+        <RouterLink to="/skill-calculator" class="nav-link">Calculator</RouterLink>
       </nav>
     </div>
   </header>
@@ -16,60 +16,32 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-/* header {
-  line-height: 1.5;
-  max-height: 100vh;
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #333;
+  padding: 1rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+  margin: 0 auto;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.nav-link:hover {
+  background-color: #ddd;
 }
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-} */
 </style>
