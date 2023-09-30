@@ -77,6 +77,8 @@ const findValidCombos = (desiredSkills = []) => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .columns-component-div {

@@ -79,7 +79,7 @@ const toggleRaceVisibility = (race) => {
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: #333;
-  max-width: 600px;
+  width: 100%;
 }
 
 h4 {
@@ -89,6 +89,7 @@ h4 {
 ul {
   list-style-type: none;
   padding: 0;
+  width: 100%;
 }
 ul.race-list {
   margin-bottom: 10px;
@@ -100,8 +101,7 @@ ul.race-list {
 
 .combos-list__combos-dropdowns {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 div.race-list-header {

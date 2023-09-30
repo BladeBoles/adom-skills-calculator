@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="list-and-title">
-      <ul>
+      <ul class="skill-calculator__ul">
         <li
           :class="`skills-list-li-${skill.source}`"
           v-for="(skill, index) in startingSkills"
@@ -51,7 +51,10 @@
         </li>
       </ul>
       <div class="skill-calculator__note-group">
-        <p><i class="fa-solid fa-user fa-sm" style="color: #26a269"></i> Race skill</p>
+        <p>
+          <i class="fa-solid fa-useskill-calculator__ulr fa-sm" style="color: #26a269"></i> Race
+          skill
+        </p>
         <p><i class="fa-solid fa-shield fa-sm" style="color: #1a5fb4"></i> Class skill</p>
       </div>
       <div class="skill-calculator__note-group">
@@ -132,7 +135,6 @@ ul {
   width: 350px;
   display: flex;
   flex-direction: column;
-  align-self: center;
   align-items: flex-start;
 }
 .race-class-select {
@@ -157,12 +159,14 @@ ul {
   text-align: start;
   font-size: 1.4em;
   padding-bottom: 5px;
+  width: 100%;
 }
 
 .skills-list-li-class {
   text-align: start;
   font-size: 1.4em;
   padding-bottom: 5px;
+  width: 100%;
 }
 
 .skills-list-li-both {
@@ -170,6 +174,7 @@ ul {
   text-align: start;
   font-size: 1.4em;
   padding-bottom: 5px;
+  width: 100%;
 }
 
 .skills-list-li-free {
@@ -196,7 +201,6 @@ h3 {
   font-weight: normal;
   justify-self: flex-start;
   font-size: 1.5em;
-  max-width: 500px;
 }
 
 #combo-span {
@@ -214,6 +218,9 @@ p {
 ul {
   margin-left: 0;
   padding-left: 0;
+}
+.skill-calculator__ul {
+  width: 100%;
 }
 li {
   list-style-type: none;
