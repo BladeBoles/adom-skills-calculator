@@ -36,7 +36,6 @@ const emit = defineEmits(['skill-chosen'])
 const isOpen = ref(false)
 
 const chooseSkill = (chosenSkill) => {
-  console.log('🚀 ~ file: SkillChoiceModal.vue:39 ~ chooseSkill ~ chosenSkill:', chosenSkill)
   emit('skill-chosen', chosenSkill)
   isOpen.value = false
 }

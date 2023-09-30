@@ -3,7 +3,11 @@
     <div class="choices-outer">
       <div class="choices">
         <label class="race-class-label" for="player-races"></label>
-        <select class="race-class-select" v-model="selectedRace">
+        <select
+          class="race-class-select"
+          v-model="selectedRace"
+          @change="updateRoute($event, 'race')"
+        >
           <option
             v-for="(playerRace, index) in playableRaces"
             class="race-class-option"
@@ -15,7 +19,11 @@
       </div>
       <div class="choices">
         <label class="race-class-label" for="player-classes"></label>
-        <select class="race-class-select" v-model="selectedClass">
+        <select
+          class="race-class-select"
+          :v-model="selectedClass"
+          @change="updateRoute($event, 'class')"
+        >
           <option
             v-for="(playerClass, index) in playableClasses"
             class="race-class-option"
@@ -77,10 +85,24 @@
 
 <script setup>
 import { playableRaces, playableClasses, skillsList } from '../tables/skills.js'
-import { computed, ref } from 'vue'
+import { computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 
-const selectedClass = ref('Archer')
-const selectedRace = ref('Dark Elf')
+const route = useRouter()
+
+const props = defineProps({
+  race: {
+    type: String,
+    default: 'Dark Elf'
+  },
+  profession: {
+    type: String,
+    default: 'Archer'
+  }
+})
+
+const selectedClass = computed(() => route?.query?.profession || props.profession)
+const selectedRace = computed(() => route?.query?.race || props.race)
 
 if (!playableRaces.includes('No Race')) {
   playableRaces.push('No Race')
@@ -113,6 +135,18 @@ const startingSkills = computed(() => {
   })
 
   return startingSkillsListArray.sort((a, b) => a.name > b.name)
+})
+
+const updateRoute = (event, changed) => {
+  const newQuery =
+    changed === 'race'
+      ? { race: event.target.value, profession: selectedClass.value }
+      : { race: selectedRace.value, profession: event.target.value }
+  route.push({ query: newQuery })
+}
+
+onMounted(async () => {
+  route.push({ query: { race: props.race, profession: props.profession } })
 })
 </script>
 

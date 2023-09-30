@@ -9,7 +9,12 @@ const router = createRouter({
       path: '/skill-calculator',
       name: 'SkillCalculator',
       component: SkillCalculator,
-      alias: '/'
+      alias: '/',
+      props: (route) => ({ race: route.query.race, profession: route.query.profession }),
+      query: {
+        race: { default: 'Dark Elf' },
+        profession: { default: 'Archer' }
+      }
     },
     {
       path: '/skill-picker',
