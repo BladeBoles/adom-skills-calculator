@@ -33,29 +33,36 @@
     <div class="list-and-title">
       <ul class="skill-calculator__ul">
         <li
-          :class="`skills-list-li-${skill.source}`"
+          class="skills-list-li"
           v-for="(skill, index) in startingSkills"
           :key="`${skill.name}${index}`"
         >
           {{ skill.name }}
-          <i
-            v-if="skill.source === 'race' || skill.source === 'both'"
-            class="fa-solid fa-user"
-            style="color: #26a269"
-          ></i>
-          <i
-            v-if="skill.source === 'class' || skill.source === 'both'"
-            class="fa-solid fa-shield"
-            style="color: #1a5fb4"
-          ></i>
+          <span class="skills-list-li__icon-group">
+            <i
+              class="fa-solid fa-user fa-sm"
+              :class="
+                skill.source === 'race' || skill.source === 'both'
+                  ? 'skills-list-li__icon--visible'
+                  : 'skills-list-li__icon--hidden'
+              "
+              style="color: #26a269"
+            ></i>
+            <i
+              class="fa-solid fa-shield fa-sm"
+              :class="
+                skill.source === 'class' || skill.source === 'both'
+                  ? 'skills-list-li__icon--visible'
+                  : 'skills-list-li__icon--hidden'
+              "
+              style="color: #1a5fb4"
+            ></i>
+          </span>
         </li>
       </ul>
-      <div class="skill-calculator__note-group">
-        <p>
-          <i class="fa-solid fa-useskill-calculator__ulr fa-sm" style="color: #26a269"></i> Race
-          skill
-        </p>
-        <p><i class="fa-solid fa-shield fa-sm" style="color: #1a5fb4"></i> Class skill</p>
+      <div class="skill-calculator__note-group skill-calculator__note-group--key">
+        <p><i class="fa-solid fa-user fa-sm" style="color: #26a269"></i> Race</p>
+        <p><i class="fa-solid fa-shield fa-sm" style="color: #1a5fb4"></i> Class</p>
       </div>
       <div class="skill-calculator__note-group">
         <p>* Bards start with random skills</p>
@@ -110,9 +117,6 @@ const startingSkills = computed(() => {
 </script>
 
 <style scoped>
-#nav {
-  font-size: 20px;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -146,55 +150,21 @@ ul {
   font-size: 1.5em;
 }
 
-#race-span {
-  color: darkgreen;
-  font-weight: 550;
-}
-#class-span {
-  color: darkblue;
-  font-weight: 550;
-}
-
-.skills-list-li-race {
+.skills-list-li {
   text-align: start;
   font-size: 1.4em;
   padding-bottom: 5px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.skills-list-li-class {
-  text-align: start;
-  font-size: 1.4em;
-  padding-bottom: 5px;
-  width: 100%;
+.skills-list-li__icon--hidden {
+  color: lightgray !important;
 }
 
-.skills-list-li-both {
-  font-weight: 550;
-  text-align: start;
-  font-size: 1.4em;
-  padding-bottom: 5px;
-  width: 100%;
-}
-
-.skills-list-li-free {
-  color: black;
-  text-align: start;
-  font-size: 1.4em;
-  padding-bottom: 5px;
-}
-
-.skills-list-li-span-race {
-  color: darkgreen;
-  font-weight: 600;
-}
-.skills-list-li-span-class {
-  color: darkblue;
-  font-weight: 600;
-}
-.skills-list-li-span-both {
-  color: darkred;
-  font-weight: 600;
+.skills-list-li__icon-group i {
+  padding-right: 5px;
 }
 
 h3 {
@@ -234,5 +204,14 @@ p {
 
 .skill-calculator__note-group {
   margin-bottom: 10px;
+  width: 100%;
+}
+
+.skill-calculator__note-group p {
+  margin-right: 10px;
+}
+.skill-calculator__note-group--key {
+  display: flex;
+  justify-content: flex-start;
 }
 </style>
