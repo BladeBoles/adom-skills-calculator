@@ -1,10 +1,11 @@
 <template>
   <div class="column-div">
-    <h3>Choose Your Skills:</h3>
     <SkillChoiceModal @skill-chosen="showChosen" />
     <ul>
       <li v-for="(skill, index) in chosenSkills" :key="`${skill.name}${index}`">
-        <span class="skill-name-div"
+        <span
+          class="skill-name-div"
+          :class="{ 'skill-name-div--last': index === chosenSkills.length - 1 }"
           ><span>{{ skill.name }}</span
           ><i id="minus" class="fa-solid fa-square-minus fa-xl" @click="removeSkill(index)"
         /></span>
@@ -44,12 +45,15 @@ const removeSkill = (skillToRemove) => {
   cursor: pointer;
 }
 .skill-name-div {
-  font-size: 24px;
+  font-size: 22px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+.skill-name-div--last {
+  margin-bottom: 0px;
 }
 .column-div {
   display: flex;
