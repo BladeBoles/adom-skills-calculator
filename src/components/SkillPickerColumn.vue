@@ -4,8 +4,10 @@
     <SkillChoiceModal @skill-chosen="showChosen" />
     <ul>
       <li v-for="(skill, index) in chosenSkills" :key="`${skill.name}${index}`">
-        <span class="skill-name-span">{{ skill.name }}</span
-        ><i id="minus" class="fa-solid fa-square-minus" @click="removeSkill(index)" />
+        <span class="skill-name-div"
+          ><span>{{ skill.name }}</span
+          ><i id="minus" class="fa-solid fa-square-minus fa-xl" @click="removeSkill(index)"
+        /></span>
       </li>
     </ul>
   </div>
@@ -34,16 +36,20 @@ const removeSkill = (skillToRemove) => {
 
 <style scoped>
 #minus {
-  font-size: 20px;
+  color: darkred;
   padding-left: 25px;
 }
 
 #minus:hover {
-  color: darkred;
   cursor: pointer;
 }
-.skill-name-span {
+.skill-name-div {
   font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .column-div {
   display: flex;

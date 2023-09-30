@@ -21,7 +21,7 @@
     </transition>
 
     <button class="add-skill-button" @click.prevent="isOpen = !isOpen">
-      <i id="plus-circle" class="fa-solid fa-circle-plus" />
+      <i id="plus-circle" class="fa-solid fa-circle-plus fa-xl" />
       <span id="add-skill-text">Add Skill</span>
     </button>
   </div>
@@ -46,6 +46,7 @@ const chooseSkill = (chosenSkill) => {
 .add-skill-button {
   border: 2px solid transparent;
   margin: 15px 0px;
+  padding: 0;
   font-size: 20px;
   transition: border-color 0.2s ease-in-out;
   background-color: white;
@@ -77,9 +78,8 @@ const chooseSkill = (chosenSkill) => {
 }
 
 #plus-circle {
-  font-size: 24px;
-  margin-right: 10px;
   color: green;
+  margin-right: 10px;
 }
 
 .modal {

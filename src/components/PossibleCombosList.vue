@@ -21,7 +21,6 @@
         </ul>
       </li>
     </ul>
-    <p v-else>Sorry, no combo begins the game with that skill list.</p>
   </div>
 </template>
 
@@ -142,5 +141,8 @@ div.race-list-header {
 
 .hidden {
   display: none;
+}
+.possible-combos-list__no-selection-message {
+  text-align: center;
 }
 </style>
