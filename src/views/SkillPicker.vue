@@ -4,8 +4,6 @@
       <div class="columns-component-div">
         <SkillPickerColumn @skill-added="updateWantedSkills" />
       </div>
-
-      <CalculateCombosButton @click="calculateCombos">Calculate Combos</CalculateCombosButton>
     </form>
     <PossibleCombosList :combosList="possibleCombos" />
   </div>
@@ -13,7 +11,6 @@
 
 <script setup>
 import SkillPickerColumn from '../components/SkillPickerColumn.vue'
-import CalculateCombosButton from '../components/CalculateCombosButton.vue'
 import PossibleCombosList from '../components/PossibleCombosList.vue'
 import { ref, computed } from 'vue'
 import allCombosJson from '../tables/skills.json'
@@ -26,9 +23,6 @@ const possibleCombos = ref([])
 
 const updateWantedSkills = (newSkillsList) => {
   wantedSkills.value = newSkillsList
-}
-
-const calculateCombos = () => {
   findValidCombos(wantedSkills.value)
 }
 
