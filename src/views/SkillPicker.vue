@@ -15,15 +15,16 @@
 import SkillPickerColumn from '../components/SkillPickerColumn.vue'
 import CalculateCombosButton from '../components/CalculateCombosButton.vue'
 import PossibleCombosList from '../components/PossibleCombosList.vue'
-import { ref, onMounted } from 'vue'
-import { allCombinations } from '../tables/skills.js'
+import { ref, computed } from 'vue'
+import allCombosJson from '../tables/skills.json'
+
+const allCombos = computed(() => JSON.parse(JSON.stringify(allCombosJson)))
 
 const wantedSkills = ref([])
-const allCombos = ref([])
+
 const possibleCombos = ref([])
 
 const updateWantedSkills = (newSkillsList) => {
-  console.log('🚀 ~ file: SkillPicker.vue:26 ~ updateWantedSkills ~ newSkillsList:', newSkillsList)
   wantedSkills.value = newSkillsList
 }
 
@@ -32,11 +33,6 @@ const calculateCombos = () => {
 }
 
 const findValidCombos = (desiredSkills = []) => {
-  console.log(
-    '🚀 ~ file: SkillPicker.vue:34 ~ findValidCombos ~ desiredSkills:',
-    desiredSkills,
-    allCombos.value
-  )
   try {
     const comboPossibilities = []
     allCombos.value.forEach((combination) => {
@@ -49,10 +45,6 @@ const findValidCombos = (desiredSkills = []) => {
         comboPossibilities.push(combination)
       }
     })
-    console.log(
-      '🚀 ~ file: SkillPicker.vue:41 ~ findValidCombos ~ comboPossibilities:',
-      comboPossibilities
-    )
     possibleCombos.value = comboPossibilities
   } catch (error) {
     console.log('error: ', error)
@@ -84,11 +76,6 @@ const findValidCombos = (desiredSkills = []) => {
   For faster lookup on the calculator?
 
 */
-
-onMounted(async () => {
-  allCombos.value = allCombinations
-  console.log('🚀 ~ file: SkillPicker.vue:55 ~ onMounted ~ value:', JSON.stringify(allCombos.value))
-})
 </script>
 
 <style scoped>
