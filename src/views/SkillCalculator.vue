@@ -21,18 +21,16 @@
             class="race-class-option"
             :key="`${playerClass}${index}`"
           >
-            {{ playerClass }}
+            <span v-if="playerClass === 'Bard'"> {{ playerClass }}*</span>
+            <span v-else-if="playerClass === 'Merchant'"> {{ playerClass }}** </span>
+            <span v-else>
+              {{ playerClass }}
+            </span>
           </option>
         </select>
       </div>
     </div>
     <div class="list-and-title">
-      <h3 class="character-choice-header">
-        Starting Skills for <span id="race-span">{{ selectedRace }} </span>
-
-        <span id="class-span">{{ selectedClass }}</span
-        >:
-      </h3>
       <ul>
         <li
           :class="`skills-list-li-${skill.source}`"
@@ -40,16 +38,29 @@
           :key="`${skill.name}${index}`"
         >
           {{ skill.name }}
-          <span :class="`skills-list-li-span-${skill.source}`">{{
-            skill.source !== 'free' ? '(' + skill.source + ')' : null
-          }}</span>
+          <i
+            v-if="skill.source === 'race' || skill.source === 'both'"
+            class="fa-solid fa-user"
+            style="color: #26a269"
+          ></i>
+          <i
+            v-if="skill.source === 'class' || skill.source === 'both'"
+            class="fa-solid fa-shield"
+            style="color: #1a5fb4"
+          ></i>
         </li>
       </ul>
-      <p>
-        Bards start with random skills and merchants have slightly different skills depending on
-        specialty.
-      </p>
-      <p>All characters train in listening, haggling, first aid, and climbing.</p>
+      <div class="skill-calculator__note-group">
+        <p><i class="fa-solid fa-user fa-sm" style="color: #26a269"></i> Race skill</p>
+        <p><i class="fa-solid fa-shield fa-sm" style="color: #1a5fb4"></i> Class skill</p>
+      </div>
+      <div class="skill-calculator__note-group">
+        <p>* Bards start with random skills</p>
+        <p>** Merchant skills depend on specialty</p>
+      </div>
+      <div>
+        <p>Climbing, first aid, haggling and listening are available to all characters</p>
+      </div>
     </div>
   </div>
 </template>
@@ -90,11 +101,11 @@ const startingSkills = computed(() => {
       startingSkillsListArray.push(skillObject)
     }
   })
+
   return startingSkillsListArray.sort((a, b) => a.name > b.name)
 })
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #nav {
   font-size: 20px;
@@ -113,12 +124,15 @@ ul {
 
 .choices-outer {
   display: flex;
+  align-items: flex-start;
+  width: 350px;
 }
 
 .list-and-title {
+  width: 350px;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  align-self: center;
   align-items: flex-start;
 }
 .race-class-select {
@@ -204,5 +218,14 @@ ul {
 li {
   list-style-type: none;
   margin-left: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.skill-calculator__note-group {
+  margin-bottom: 10px;
 }
 </style>

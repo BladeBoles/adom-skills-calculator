@@ -1,9 +1,13 @@
 <template>
   <div class="combos-list">
     <ul class="combos-list__combos-dropdowns" v-if="combosList.length > 0">
-      <li v-for="(race, index) in uniqueRaces" :key="`${race}${index}`">
+      <li
+        class="combos-list__dropdown-item"
+        v-for="(race, index) in uniqueRaces"
+        :key="`${race}${index}`"
+      >
         <div class="race-list-header" @click="toggleRaceVisibility(race)">
-          <h4>{{ race }} Classes:</h4>
+          <h4>{{ race }}</h4>
           <div class="toggle-button">
             <i class="fa-solid fa-caret-up" v-if="!hiddenRaces.includes(race)" />
             <i class="fa-solid fa-caret-down" v-else />
@@ -88,6 +92,10 @@ ul {
 }
 ul.race-list {
   margin-bottom: 10px;
+}
+
+.combos-list__dropdown-item {
+  margin-right: 10px;
 }
 
 .combos-list__combos-dropdowns {

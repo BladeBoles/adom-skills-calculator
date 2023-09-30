@@ -20,7 +20,6 @@ const emit = defineEmits(['skill-added'])
 const chosenSkills = ref([])
 
 const showChosen = (chosenSkill) => {
-  console.log('🚀 ~ file: SkillPickerColumn.vue:23 ~ showChosen ~ chosenSkill:', chosenSkill)
   if (chosenSkills.value.filter((skill) => skill.name === chosenSkill).length === 0) {
     chosenSkills.value.push({ name: chosenSkill })
   }
@@ -45,10 +44,6 @@ const removeSkill = (skillToRemove) => {
 }
 .skill-name-span {
   font-size: 24px;
-}
-.skill-name-span:hover {
-  text-decoration: 2px black underline;
-  cursor: pointer;
 }
 .column-div {
   display: flex;
