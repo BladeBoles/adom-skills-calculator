@@ -1,13 +1,13 @@
 [
   {
     "race": "Dark Elf",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": ["Archery", "Concentration", "Dodge", "Find Weakness", "Fletchery"],
     "doubleSkills": ["Alertness", "Stealth"]
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Archery",
@@ -21,7 +21,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Alertness",
       "Athletics",
@@ -38,13 +38,13 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Alertness", "Find Weakness", "Music", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Alertness",
       "Athletics",
@@ -59,13 +59,13 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": ["Alertness", "Athletics", "Backstabbing", "Dodge", "Stealth", "Two Weapon Combat"],
     "doubleSkills": ["Find Weakness"]
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Alertness",
       "Concentration",
@@ -83,13 +83,13 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": ["Athletics", "Concentration", "Dodge", "Healing", "Law", "Stealth"],
     "doubleSkills": ["Alertness", "Find Weakness"]
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Alertness",
       "Concentration",
@@ -105,7 +105,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Alertness",
       "Bridge Building",
@@ -123,7 +123,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Alertness",
       "Archery",
@@ -137,13 +137,13 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": ["Concentration", "Cooking", "Healing", "Herbalism", "Literacy", "Stealth"],
     "doubleSkills": ["Alertness", "Find Weakness"]
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -162,7 +162,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Alertness",
       "Concentration",
@@ -176,13 +176,13 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": ["Athletics", "Concentration", "Dodge", "Healing", "Literacy"],
     "doubleSkills": ["Alertness", "Find Weakness", "Stealth"]
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -197,7 +197,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Alertness",
       "Athletics",
@@ -214,7 +214,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Alertness",
       "Concentration",
@@ -229,7 +229,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Archery",
       "Athletics",
@@ -247,7 +247,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Appraising",
       "Detect Traps",
@@ -260,7 +260,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Alertness",
       "Appraising",
@@ -275,7 +275,7 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -290,13 +290,13 @@
   },
   {
     "race": "Dark Elf",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Alertness", "Find Weakness", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "Drakeling",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Archery",
       "Concentration",
@@ -311,7 +311,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Archery",
@@ -330,7 +330,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Alertness",
       "Athletics",
@@ -346,13 +346,13 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Alertness", "Food Preservation", "Swimming"],
     "doubleSkills": ["Music"]
   },
   {
     "race": "Drakeling",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Alertness",
       "Athletics",
@@ -368,7 +368,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Alertness",
       "Athletics",
@@ -384,7 +384,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Alertness",
       "Concentration",
@@ -401,7 +401,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Athletics",
       "Concentration",
@@ -417,7 +417,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Alertness",
       "Concentration",
@@ -432,7 +432,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Alertness",
       "Bridge Building",
@@ -451,7 +451,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Alertness",
       "Archery",
@@ -468,7 +468,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Concentration",
       "Cooking",
@@ -484,7 +484,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -504,7 +504,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Alertness",
       "Concentration",
@@ -519,7 +519,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Athletics",
       "Concentration",
@@ -536,7 +536,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -554,7 +554,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Alertness",
       "Athletics",
@@ -572,7 +572,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Alertness",
       "Concentration",
@@ -588,7 +588,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Archery",
       "Athletics",
@@ -603,7 +603,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Appraising",
       "Detect Traps",
@@ -619,7 +619,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Alertness",
       "Appraising",
@@ -637,7 +637,7 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -655,13 +655,13 @@
   },
   {
     "race": "Drakeling",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Alertness", "Food Preservation", "Music", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "Dwarf",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Alertness",
       "Archery",
@@ -678,7 +678,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -697,7 +697,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Detect Traps",
@@ -715,13 +715,13 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Detect Traps", "Metallurgy", "Mining", "Music", "Smithing"],
     "doubleSkills": []
   },
   {
     "race": "Dwarf",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Athletics",
       "Detect Traps",
@@ -739,7 +739,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Athletics",
       "Backstabbing",
@@ -755,7 +755,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Concentration",
       "Detect Traps",
@@ -774,7 +774,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Athletics",
@@ -792,7 +792,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Concentration",
       "Detect Traps",
@@ -807,7 +807,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Bridge Building",
       "Cooking",
@@ -826,7 +826,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -843,7 +843,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Concentration",
@@ -861,7 +861,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -879,7 +879,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Concentration",
       "Detect Traps",
@@ -896,7 +896,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Athletics",
@@ -915,7 +915,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -935,7 +935,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Athletics",
       "Concentration",
@@ -955,7 +955,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Concentration",
       "Detect Item Status",
@@ -971,7 +971,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -992,7 +992,7 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -1008,13 +1008,13 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": ["Appraising", "Athletics", "Concentration", "Find Weakness", "Mining"],
     "doubleSkills": ["Detect Traps", "Metallurgy", "Smithing"]
   },
   {
     "race": "Dwarf",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Concentration",
@@ -1032,13 +1032,13 @@
   },
   {
     "race": "Dwarf",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Detect Traps", "Metallurgy", "Mining", "Smithing"],
     "doubleSkills": []
   },
   {
     "race": "Gnome",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Alertness",
       "Archery",
@@ -1055,7 +1055,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -1076,7 +1076,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Dodge",
@@ -1094,13 +1094,13 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Gemology", "Mining", "Music", "Pick Pockets", "Ventriloquism"],
     "doubleSkills": []
   },
   {
     "race": "Gnome",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Athletics",
       "Dodge",
@@ -1118,7 +1118,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Athletics",
       "Backstabbing",
@@ -1134,7 +1134,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Concentration",
       "Gardening",
@@ -1153,7 +1153,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Athletics",
@@ -1171,7 +1171,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Concentration",
       "Healing",
@@ -1186,7 +1186,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Bridge Building",
       "Cooking",
@@ -1207,7 +1207,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -1226,7 +1226,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Concentration",
@@ -1244,7 +1244,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -1260,7 +1260,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Concentration",
       "Herbalism",
@@ -1275,7 +1275,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Athletics",
@@ -1294,7 +1294,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -1314,7 +1314,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Athletics",
       "Concentration",
@@ -1334,7 +1334,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Concentration",
       "Detect Item Status",
@@ -1350,7 +1350,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -1371,7 +1371,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -1387,7 +1387,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Athletics",
@@ -1405,7 +1405,7 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Concentration",
@@ -1421,19 +1421,19 @@
   },
   {
     "race": "Gnome",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Gemology", "Mining", "Pick Pockets", "Ventriloquism"],
     "doubleSkills": []
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": ["Alertness", "Archery", "Concentration", "Fletchery", "Literacy", "Stealth"],
     "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -1450,7 +1450,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Herbalism",
@@ -1464,25 +1464,25 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Dodge", "Literacy", "Music"],
     "doubleSkills": []
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": ["Athletics", "Healing", "Herbalism", "Literacy", "Stealth", "Survival", "Swimming"],
     "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": ["Athletics", "Backstabbing", "Find Weakness", "Literacy", "Two Weapon Combat"],
     "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Concentration",
       "Dodge",
@@ -1497,7 +1497,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Athletics",
@@ -1511,13 +1511,13 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": ["Concentration", "Dodge", "Gemology", "Healing", "Metallurgy", "Swimming"],
     "doubleSkills": ["Literacy"]
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Bridge Building",
       "Cooking",
@@ -1536,7 +1536,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -1551,7 +1551,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Concentration",
@@ -1565,7 +1565,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -1581,19 +1581,19 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": ["Concentration", "Dodge", "Gemology", "Herbalism", "Music", "Stealth"],
     "doubleSkills": ["Literacy"]
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": ["Alertness", "Athletics", "Concentration", "Find Weakness", "Healing", "Stealth"],
     "doubleSkills": ["Dodge", "Literacy"]
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -1609,7 +1609,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Athletics",
       "Concentration",
@@ -1623,13 +1623,13 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": ["Concentration", "Detect Item Status", "Dodge", "Healing", "Herbalism"],
     "doubleSkills": ["Literacy"]
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -1646,7 +1646,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -1662,7 +1662,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Athletics",
@@ -1678,7 +1678,7 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Concentration",
@@ -1692,19 +1692,19 @@
   },
   {
     "race": "Gray Elf",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Dodge", "Literacy"],
     "doubleSkills": []
   },
   {
     "race": "High Elf",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": ["Alertness", "Archery", "Concentration", "Fletchery", "Literacy"],
     "doubleSkills": ["Dodge", "Stealth"]
   },
   {
     "race": "High Elf",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -1720,7 +1720,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Herbalism",
@@ -1735,19 +1735,19 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Dodge", "Literacy", "Music", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "High Elf",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": ["Athletics", "Healing", "Herbalism", "Literacy", "Survival", "Swimming"],
     "doubleSkills": ["Dodge", "Stealth"]
   },
   {
     "race": "High Elf",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Athletics",
       "Backstabbing",
@@ -1760,7 +1760,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Concentration",
       "Dodge",
@@ -1776,7 +1776,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Athletics",
@@ -1791,7 +1791,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Concentration",
       "Dodge",
@@ -1805,7 +1805,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Bridge Building",
       "Cooking",
@@ -1823,7 +1823,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -1837,7 +1837,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Concentration",
@@ -1852,7 +1852,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -1869,19 +1869,19 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": ["Concentration", "Dodge", "Gemology", "Herbalism", "Music"],
     "doubleSkills": ["Literacy", "Stealth"]
   },
   {
     "race": "High Elf",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": ["Alertness", "Athletics", "Concentration", "Find Weakness", "Healing"],
     "doubleSkills": ["Dodge", "Literacy", "Stealth"]
   },
   {
     "race": "High Elf",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -1896,19 +1896,19 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": ["Athletics", "Concentration", "Healing", "Law", "Swimming", "Two Weapon Combat"],
     "doubleSkills": ["Dodge", "Literacy", "Stealth"]
   },
   {
     "race": "High Elf",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": ["Concentration", "Detect Item Status", "Dodge", "Healing", "Herbalism", "Stealth"],
     "doubleSkills": ["Literacy"]
   },
   {
     "race": "High Elf",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -1926,7 +1926,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -1941,7 +1941,7 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Athletics",
@@ -1958,19 +1958,19 @@
   },
   {
     "race": "High Elf",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": ["Alchemy", "Concentration", "Dodge", "Healing", "Herbalism", "Ventriloquism"],
     "doubleSkills": ["Literacy", "Stealth"]
   },
   {
     "race": "High Elf",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Dodge", "Literacy", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "Human",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Alertness",
       "Archery",
@@ -1985,7 +1985,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -2004,7 +2004,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Dodge",
@@ -2018,13 +2018,13 @@
   },
   {
     "race": "Human",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Food Preservation", "Music", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "Human",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Athletics",
       "Dodge",
@@ -2038,7 +2038,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Athletics",
       "Backstabbing",
@@ -2052,7 +2052,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Concentration",
       "Food Preservation",
@@ -2067,7 +2067,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Athletics",
@@ -2083,7 +2083,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Concentration",
       "Food Preservation",
@@ -2096,7 +2096,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Bridge Building",
       "Cooking",
@@ -2113,7 +2113,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -2128,7 +2128,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Concentration",
@@ -2144,7 +2144,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -2162,7 +2162,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Concentration",
       "Food Preservation",
@@ -2177,7 +2177,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Athletics",
@@ -2194,7 +2194,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -2210,7 +2210,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Athletics",
       "Concentration",
@@ -2226,7 +2226,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Concentration",
       "Detect Item Status",
@@ -2240,7 +2240,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -2255,7 +2255,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -2271,7 +2271,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Athletics",
@@ -2287,7 +2287,7 @@
   },
   {
     "race": "Human",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Concentration",
@@ -2303,13 +2303,13 @@
   },
   {
     "race": "Human",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Food Preservation", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "Hurthling",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Alertness",
       "Concentration",
@@ -2323,7 +2323,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -2341,7 +2341,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Archery",
       "Athletics",
@@ -2360,13 +2360,13 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Archery", "Cooking", "Food Preservation", "Gardening", "Music", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "Hurthling",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -2383,7 +2383,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Archery",
       "Athletics",
@@ -2400,7 +2400,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Archery",
       "Concentration",
@@ -2418,7 +2418,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Archery",
@@ -2437,7 +2437,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Archery",
       "Concentration",
@@ -2455,7 +2455,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Archery",
       "Bridge Building",
@@ -2469,7 +2469,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Athletics",
       "Cooking",
@@ -2485,7 +2485,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Archery",
@@ -2502,7 +2502,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -2523,7 +2523,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Archery",
       "Concentration",
@@ -2539,7 +2539,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Archery",
@@ -2557,7 +2557,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -2574,7 +2574,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Archery",
       "Athletics",
@@ -2593,7 +2593,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Archery",
       "Concentration",
@@ -2610,7 +2610,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Athletics",
@@ -2628,7 +2628,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -2645,7 +2645,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Archery",
@@ -2664,7 +2664,7 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Archery",
@@ -2681,19 +2681,19 @@
   },
   {
     "race": "Hurthling",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Archery", "Cooking", "Food Preservation", "Gardening", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": ["Archery", "Fletchery", "Literacy", "Necromancy", "Stealth"],
     "doubleSkills": ["Alertness", "Concentration", "Dodge"]
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Archery",
@@ -2711,7 +2711,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Alertness",
       "Athletics",
@@ -2728,13 +2728,13 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Alertness", "Concentration", "Dodge", "Literacy", "Music", "Necromancy"],
     "doubleSkills": []
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Alertness",
       "Athletics",
@@ -2751,7 +2751,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Alertness",
       "Athletics",
@@ -2766,7 +2766,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Alertness",
       "Dodge",
@@ -2782,19 +2782,19 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": ["Athletics", "Find Weakness", "Healing", "Law", "Literacy", "Necromancy"],
     "doubleSkills": ["Alertness", "Concentration", "Dodge"]
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": ["Alertness", "Dodge", "Gemology", "Healing", "Metallurgy", "Necromancy", "Swimming"],
     "doubleSkills": ["Concentration", "Literacy"]
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Alertness",
       "Bridge Building",
@@ -2816,7 +2816,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Alertness",
       "Archery",
@@ -2834,13 +2834,13 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": ["Cooking", "Dodge", "Find Weakness", "Healing", "Herbalism", "Necromancy"],
     "doubleSkills": ["Alertness", "Concentration", "Literacy"]
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -2859,19 +2859,19 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": ["Alertness", "Dodge", "Gemology", "Herbalism", "Music", "Necromancy", "Stealth"],
     "doubleSkills": ["Concentration", "Literacy"]
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": ["Athletics", "Find Weakness", "Healing", "Necromancy", "Stealth"],
     "doubleSkills": ["Alertness", "Concentration", "Dodge", "Literacy"]
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -2886,7 +2886,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Alertness",
       "Athletics",
@@ -2901,13 +2901,13 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": ["Alertness", "Detect Item Status", "Dodge", "Healing", "Herbalism", "Necromancy"],
     "doubleSkills": ["Concentration", "Literacy"]
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Archery",
       "Athletics",
@@ -2925,7 +2925,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Appraising",
       "Concentration",
@@ -2942,7 +2942,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Alertness",
       "Appraising",
@@ -2959,7 +2959,7 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -2974,13 +2974,13 @@
   },
   {
     "race": "Mist Elf",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Alertness", "Concentration", "Dodge", "Literacy", "Necromancy"],
     "doubleSkills": []
   },
   {
     "race": "Orc",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Alertness",
       "Archery",
@@ -2996,7 +2996,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -3012,7 +3012,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Backstabbing",
@@ -3029,13 +3029,13 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Backstabbing", "Find Weakness", "Mining", "Music"],
     "doubleSkills": []
   },
   {
     "race": "Orc",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Athletics",
       "Backstabbing",
@@ -3052,13 +3052,13 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": ["Athletics", "Dodge", "Mining", "Two Weapon Combat"],
     "doubleSkills": ["Backstabbing", "Find Weakness"]
   },
   {
     "race": "Orc",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Backstabbing",
       "Concentration",
@@ -3076,7 +3076,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Athletics",
@@ -3091,7 +3091,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Backstabbing",
       "Concentration",
@@ -3107,7 +3107,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Backstabbing",
       "Bridge Building",
@@ -3127,7 +3127,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -3143,7 +3143,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Backstabbing",
@@ -3158,7 +3158,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -3177,7 +3177,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Backstabbing",
       "Concentration",
@@ -3193,7 +3193,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Athletics",
@@ -3209,7 +3209,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -3226,7 +3226,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Athletics",
       "Backstabbing",
@@ -3245,7 +3245,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Backstabbing",
       "Concentration",
@@ -3260,7 +3260,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -3280,7 +3280,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -3297,7 +3297,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Athletics",
@@ -3312,7 +3312,7 @@
   },
   {
     "race": "Orc",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Backstabbing",
@@ -3329,13 +3329,13 @@
   },
   {
     "race": "Orc",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Backstabbing", "Find Weakness", "Mining"],
     "doubleSkills": []
   },
   {
     "race": "Ratling",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Alertness",
       "Appraising",
@@ -3350,7 +3350,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -3369,7 +3369,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Appraising",
       "Athletics",
@@ -3385,13 +3385,13 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Appraising", "Detect Item Status", "Music", "Stealth", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "Ratling",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Appraising",
       "Athletics",
@@ -3405,7 +3405,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Appraising",
       "Athletics",
@@ -3421,7 +3421,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Appraising",
       "Concentration",
@@ -3438,7 +3438,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Appraising",
@@ -3456,7 +3456,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Appraising",
       "Concentration",
@@ -3471,7 +3471,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Appraising",
       "Bridge Building",
@@ -3490,7 +3490,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Appraising",
       "Archery",
@@ -3505,7 +3505,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Appraising",
@@ -3523,7 +3523,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Gemology",
@@ -3539,7 +3539,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Appraising",
       "Concentration",
@@ -3554,7 +3554,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Appraising",
@@ -3571,7 +3571,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Concentration",
@@ -3587,7 +3587,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Appraising",
       "Athletics",
@@ -3603,7 +3603,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Appraising",
       "Concentration",
@@ -3617,7 +3617,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Appraising",
@@ -3636,7 +3636,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Detect Item Status",
@@ -3650,7 +3650,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Athletics",
       "Concentration",
@@ -3666,7 +3666,7 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -3682,13 +3682,13 @@
   },
   {
     "race": "Ratling",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Appraising", "Detect Item Status", "Stealth", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "Troll",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": [
       "Alertness",
       "Archery",
@@ -3706,7 +3706,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -3728,7 +3728,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Bridge Building",
       "Dodge",
@@ -3745,13 +3745,13 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Bard",
+    "playableProfession": "Bard",
     "skills": ["Athletics", "Bridge Building", "Food Preservation", "Gemology", "Mining", "Music"],
     "doubleSkills": []
   },
   {
     "race": "Troll",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": [
       "Bridge Building",
       "Dodge",
@@ -3768,7 +3768,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": [
       "Backstabbing",
       "Bridge Building",
@@ -3783,7 +3783,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Athletics",
       "Bridge Building",
@@ -3803,7 +3803,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Bridge Building",
@@ -3820,7 +3820,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": [
       "Athletics",
       "Bridge Building",
@@ -3836,7 +3836,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Athletics",
       "Cooking",
@@ -3854,7 +3854,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Bridge Building",
@@ -3872,7 +3872,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Athletics",
@@ -3891,7 +3891,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -3910,7 +3910,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": [
       "Athletics",
       "Bridge Building",
@@ -3926,7 +3926,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Bridge Building",
@@ -3944,7 +3944,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -3963,7 +3963,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Bridge Building",
       "Concentration",
@@ -3982,7 +3982,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": [
       "Athletics",
       "Bridge Building",
@@ -3999,7 +3999,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -4017,7 +4017,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -4036,7 +4036,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Bridge Building",
@@ -4053,7 +4053,7 @@
   },
   {
     "race": "Troll",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Athletics",
@@ -4072,19 +4072,19 @@
   },
   {
     "race": "Troll",
-    "playableClass": "No Class",
+    "playableProfession": "No Profession",
     "skills": ["Athletics", "Bridge Building", "Food Preservation", "Gemology", "Mining"],
     "doubleSkills": []
   },
   {
     "race": "No race",
-    "playableClass": "Archer",
+    "playableProfession": "Archer",
     "skills": ["Alertness", "Archery", "Concentration", "Dodge", "Fletchery", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "No race",
-    "playableClass": "Assassin",
+    "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
       "Alertness",
@@ -4101,7 +4101,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Barbarian",
+    "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Dodge",
@@ -4113,22 +4113,22 @@
     ],
     "doubleSkills": []
   },
-  { "race": "No race", "playableClass": "Bard", "skills": ["Music"], "doubleSkills": [] },
+  { "race": "No race", "playableProfession": "Bard", "skills": ["Music"], "doubleSkills": [] },
   {
     "race": "No race",
-    "playableClass": "Beastfighter",
+    "playableProfession": "Beastfighter",
     "skills": ["Athletics", "Dodge", "Healing", "Herbalism", "Stealth", "Survival", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "No race",
-    "playableClass": "Chaos Knight",
+    "playableProfession": "Chaos Knight",
     "skills": ["Athletics", "Backstabbing", "Dodge", "Find Weakness", "Two Weapon Combat"],
     "doubleSkills": []
   },
   {
     "race": "No race",
-    "playableClass": "Druid",
+    "playableProfession": "Druid",
     "skills": [
       "Concentration",
       "Gardening",
@@ -4143,7 +4143,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Duelist",
+    "playableProfession": "Duelist",
     "skills": [
       "Alertness",
       "Athletics",
@@ -4157,13 +4157,13 @@
   },
   {
     "race": "No race",
-    "playableClass": "Elementalist",
+    "playableProfession": "Elementalist",
     "skills": ["Concentration", "Gemology", "Healing", "Literacy", "Metallurgy", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "No race",
-    "playableClass": "Farmer",
+    "playableProfession": "Farmer",
     "skills": [
       "Bridge Building",
       "Cooking",
@@ -4180,7 +4180,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Fighter",
+    "playableProfession": "Fighter",
     "skills": [
       "Archery",
       "Athletics",
@@ -4195,7 +4195,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Healer",
+    "playableProfession": "Healer",
     "skills": [
       "Alertness",
       "Concentration",
@@ -4209,7 +4209,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Merchant",
+    "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -4225,13 +4225,13 @@
   },
   {
     "race": "No race",
-    "playableClass": "Mindcrafter",
+    "playableProfession": "Mindcrafter",
     "skills": ["Concentration", "Gemology", "Herbalism", "Literacy", "Music", "Stealth"],
     "doubleSkills": []
   },
   {
     "race": "No race",
-    "playableClass": "Monk",
+    "playableProfession": "Monk",
     "skills": [
       "Alertness",
       "Athletics",
@@ -4246,7 +4246,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Necromancer",
+    "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
       "Appraising",
@@ -4262,7 +4262,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Paladin",
+    "playableProfession": "Paladin",
     "skills": [
       "Athletics",
       "Concentration",
@@ -4278,13 +4278,13 @@
   },
   {
     "race": "No race",
-    "playableClass": "Priest",
+    "playableProfession": "Priest",
     "skills": ["Concentration", "Detect Item Status", "Healing", "Herbalism", "Literacy"],
     "doubleSkills": []
   },
   {
     "race": "No race",
-    "playableClass": "Ranger",
+    "playableProfession": "Ranger",
     "skills": [
       "Alertness",
       "Archery",
@@ -4301,7 +4301,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Thief",
+    "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
@@ -4315,7 +4315,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Weaponsmith",
+    "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
       "Athletics",
@@ -4329,7 +4329,7 @@
   },
   {
     "race": "No race",
-    "playableClass": "Wizard",
+    "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
       "Concentration",
@@ -4341,5 +4341,5 @@
     ],
     "doubleSkills": []
   },
-  { "race": "No race", "playableClass": "No Class", "skills": [], "doubleSkills": [] }
+  { "race": "No race", "playableProfession": "No Profession", "skills": [], "doubleSkills": [] }
 ]

@@ -48,7 +48,7 @@ const findValidCombos = (desiredSkills = []) => {
 /* TODO: Modify one allCombinations Array to be:
   {
     playableRace: string
-    playableClass: string
+    playableProfession: string
     raceSkills: string[]
     classSkills: string[]
   }[]
@@ -64,7 +64,7 @@ const findValidCombos = (desiredSkills = []) => {
   }[]
   and
   {
-    playableClass: string
+    playableProfession: string
     skills: string[]
   }[]
   For faster lookup on the calculator?

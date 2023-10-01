@@ -10,7 +10,10 @@ const router = createRouter({
       name: 'SkillCalculator',
       component: SkillCalculator,
       alias: '/',
-      props: (route) => ({ race: route.query.race, profession: route.query.profession }),
+      props: (route) => {
+        console.log('🚀 ~ file: index.js:14 ~ route:', route.query)
+        return { race: route.query?.race || 'Dark Elf', profession: route.query?.profession || 'Archer' }
+      },
       query: {
         race: { default: 'Dark Elf' },
         profession: { default: 'Archer' }

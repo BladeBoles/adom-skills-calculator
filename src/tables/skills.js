@@ -89,7 +89,7 @@ const playableRaces = [
   'Troll'
 ]
 
-const playableClasses = [
+const playableProfessions = [
   'Archer',
   'Assassin',
   'Barbarian',
@@ -118,14 +118,14 @@ const skillsList = [
     name: 'Alchemy',
     description: 'Allowsbrewingpotionsusingafixedlistofrecipes',
     races: [],
-    classes: ['Assassin', 'Merchant', 'Necromancer', 'Wizard'],
+    professions: ['Assassin', 'Merchant', 'Necromancer', 'Wizard'],
     inGame: false
   },
   {
     name: 'Alertness',
     description: 'Givesachancetoevadecombatmagicandtrap',
     races: ['Dark Elf', 'Drakeling', 'Mist Elf'],
-    classes: [
+    professions: [
       'Archer',
       'Assassin',
       'Duelist',
@@ -140,21 +140,21 @@ const skillsList = [
     name: 'Appraising',
     description: 'Performsitemqualityevaluation',
     races: ['Ratling'],
-    classes: ['Merchant', 'Necromancer', 'Thief', 'Weaponsmith'],
+    professions: ['Merchant', 'Necromancer', 'Thief', 'Weaponsmith'],
     inGame: false
   },
   {
     name: 'Archery',
     description: 'Grantsmissileattackbonuses',
     races: ['Hurthling'],
-    classes: ['Archer', 'Assassin', ' Farmer', 'Fighter', 'Ranger'],
+    professions: ['Archer', 'Assassin', ' Farmer', 'Fighter', 'Ranger'],
     inGame: false
   },
   {
     name: 'Athletics',
     description: 'Grantsspeedbonus,helpsphysicalAttributestraining',
     races: ['Troll'],
-    classes: [
+    professions: [
       'Barbarian',
       'Beastfighter',
       'Chaos Knight',
@@ -171,14 +171,14 @@ const skillsList = [
     name: 'Backstabbing',
     description: 'Grantsachancetoinflictbonusdamageonunawareopponents',
     races: ['Orc'],
-    classes: ['Assassin', 'Chaos Knight', ' Thief'],
+    professions: ['Assassin', 'Chaos Knight', ' Thief'],
     inGame: true
   },
   {
     name: 'Bridge Building',
     description: 'Allowsbuildingbridges',
     races: ['Troll'],
-    classes: ['Farmer'],
+    professions: ['Farmer'],
     inGame: true
   },
   // {
@@ -186,14 +186,14 @@ const skillsList = [
   //   description:
   //     'Grantsachancetoclimboutofpits;prerequisitetoentertheRift',
   //   races: ['All'],
-  //   classes: ['All'],
+  //   professions: ['All'],
   //   inGame: false
   // },
   {
     name: 'Concentration',
     description: 'IncreasesPPregenerationrate;improvesspelllearningprocess',
     races: ['Mist Elf'],
-    classes: [
+    professions: [
       'Archer',
       'Druid',
       'Duelist',
@@ -213,42 +213,42 @@ const skillsList = [
     name: 'Cooking',
     description: 'Allowscookingcorpses',
     races: ['Hurthling'],
-    classes: ['Healer', 'Farmer'],
+    professions: ['Healer', 'Farmer'],
     inGame: false
   },
   // {
   //   name: 'Courage',
   //   description: 'Reducesto-hitpenaltieswhenfightingwithmultipleenemies',
   //   races: ['None'],
-  //   classes: ['None'],
+  //   professions: ['None'],
   //   inGame: true
   // },
   {
     name: 'Detect Item Status',
     description: 'GivesachancetoautomaticallyidentifyB/U/Cstatusofanitem',
     races: ['Ratling'],
-    classes: ['Merchant', 'Priest'],
+    professions: ['Merchant', 'Priest'],
     inGame: false
   },
   {
     name: 'Detect Traps',
     description: 'Givesachancetofindtrapspassively/onthespecifiedlocation',
     races: ['Dwarf'],
-    classes: ['Assassin', 'Thief', 'Weaponsmith'],
+    professions: ['Assassin', 'Thief', 'Weaponsmith'],
     inGame: true
   },
   {
     name: 'Disarm Traps',
     description: 'Allowsdisarmingtraps',
     races: ['None'],
-    classes: ['Thief'],
+    professions: ['Thief'],
     inGame: true
   },
   {
     name: 'Dodge',
     description: 'GrantsDVbonus,grantsasmallchancetoavoidcombatmagic',
     races: ['High Elf', 'Gray Elf', 'Mist Elf'],
-    classes: [
+    professions: [
       'Archer',
       'Assassin',
       'Barbarian',
@@ -266,7 +266,7 @@ const skillsList = [
     name: 'Find Weakness',
     description: 'Grantsachancetoinflictacriticalhit',
     races: ['Dark Elf', 'Orc'],
-    classes: [
+    professions: [
       'Assassin',
       'Chaos Knight',
       'Duelist',
@@ -282,14 +282,14 @@ const skillsList = [
   //   name: 'First Aid',
   //   description: 'CanbeusedtorestorerecentlylostHP',
   //   races: ['All'],
-  //   classes: ['All'],
+  //   professions: ['All'],
   //   inGame: false
   // },
   {
     name: 'Fletchery',
     description: 'Allowscreatingammunitionusingfletcherysets',
     races: ['None'],
-    classes: ['Archer', 'Farmer'],
+    professions: ['Archer', 'Farmer'],
     inGame: false
   },
   {
@@ -297,7 +297,7 @@ const skillsList = [
     description:
       'Increasesthechancetogeneratecorpses,helpspreservecorpseslonger',
     races: ['Drakeling', 'Human', 'Hurthling', 'Troll'],
-    classes: ['Farmer', 'Necromancer', 'Ranger'],
+    professions: ['Farmer', 'Necromancer', 'Ranger'],
     inGame: false
   },
   {
@@ -305,7 +305,7 @@ const skillsList = [
     description:
       'Allowsplantingherbbushesandgatheringherbseedsfromblossomingbushes',
     races: ['Hurthling'],
-    classes: ['Druid', 'Farmer'],
+    professions: ['Druid', 'Farmer'],
     inGame: true
   },
   {
@@ -313,21 +313,21 @@ const skillsList = [
     description:
       'Grantsachancetogenerateandautomaticallyidentifygemsfromdigging',
     races: ['Gnome', 'Troll'],
-    classes: ['Elementalist', 'Merchant', 'Mindcrafter'],
+    professions: ['Elementalist', 'Merchant', 'Mindcrafter'],
     inGame: false
   },
   // {
   //   name: 'Haggling',
   //   description: 'Canbeusedtohagglewithshopkeepers',
   //   races: ['All'],
-  //   classes: ['All'],
+  //   professions: ['All'],
   //   inGame: false
   // },
   {
     name: 'Healing',
     description: 'PassivelyrestoresHP',
     races: ['None'],
-    classes: [
+    professions: [
       'Beastfighter',
       'Druid',
       'Duelist',
@@ -345,7 +345,7 @@ const skillsList = [
     name: 'Herbalism',
     description: 'Improvesthequality(B/U/Cstatus)ofcollectedherbs',
     races: ['None'],
-    classes: [
+    professions: [
       'Barbarian',
       'Beastfighter',
       'Druid',
@@ -364,7 +364,7 @@ const skillsList = [
     name: 'Law',
     description: 'ProvidesmessageswhenthePCperformslawful/chaoticacts',
     races: ['None'],
-    classes: ['Duelist', 'Paladin'],
+    professions: ['Duelist', 'Paladin'],
     inGame: true
   },
   // {
@@ -372,14 +372,14 @@ const skillsList = [
   //   description:
   //     'Increasesthechanceofreceivingaudiblemessages(e.g.poolorriversounds)',
   //   races: ['All'],
-  //   classes: ['All'],
+  //   professions: ['All'],
   //   inGame: false
   // },
   {
     name: 'Literacy',
     description: 'Allowsreadingscrolls,spellbooksandinscriptionsongraves',
     races: ['High Elf', 'Gray Elf', 'Mist Elf', 'Learning > 9'],
-    classes: [
+    professions: [
       'Druid',
       'Elementalist',
       'Healer',
@@ -398,49 +398,49 @@ const skillsList = [
     name: 'Metallurgy',
     description: 'Canbeusedtoidentifyitemmaterialifitismetallic',
     races: ['Dwarf', ' Orc'],
-    classes: ['Elementalist', 'Fighter', 'Merchant', 'Weaponsmith'],
+    professions: ['Elementalist', 'Fighter', 'Merchant', 'Weaponsmith'],
     inGame: false
   },
   {
     name: 'Mining',
     description: 'Reducesdiggingtime;increasesthechancetogenerateore',
     races: ['Dwarf', 'Gnome', 'Orc', 'Troll'],
-    classes: ['None'],
+    professions: ['None'],
     inGame: false
   },
   {
     name: 'Music',
     description: 'Allowsplayingmusicalinstrumentstotameanimals',
     races: ['Drakeling'],
-    classes: ['Bard', 'Mindcrafter', ' Priest'],
+    professions: ['Bard', 'Mindcrafter', ' Priest'],
     inGame: false
   },
   {
     name: 'Necromancy',
     description: 'Canbeusedtocreateundeadslaves',
     races: ['Mist Elf'],
-    classes: ['Necromancer'],
+    professions: ['Necromancer'],
     inGame: false
   },
   {
     name: 'Pick Locks',
     description: 'Allowstheuseofthievespickstoopenlockeddoors',
     races: ['None'],
-    classes: ['Assassin', 'Thief'],
+    professions: ['Assassin', 'Thief'],
     inGame: true
   },
   {
     name: 'Pick Pockets',
     description: 'Canbeusedtostealfromhumanoidenemies',
     races: ['Gnome'],
-    classes: ['Merchant', 'Thief'],
+    professions: ['Merchant', 'Thief'],
     inGame: true
   },
   {
     name: 'Smithing',
     description: 'Canbeappliedtouseaforgetoimprovemetallicitems',
     races: ['Dwarf'],
-    classes: ['Farmer', 'Weaponsmith'],
+    professions: ['Farmer', 'Weaponsmith'],
     inGame: true
   },
   {
@@ -454,7 +454,7 @@ const skillsList = [
       ' Mist Elf',
       'Ratling'
     ],
-    classes: [
+    professions: [
       'Archer',
       'Assassin',
       ' Barbarian',
@@ -474,7 +474,7 @@ const skillsList = [
     name: 'Survival',
     description: 'Canbeusedtofindfoodinthewilderness',
     races: ['RatlingorbornunderFalcon'],
-    classes: [
+    professions: [
       'Barbarian',
       'Beastfighter',
       'Druid',
@@ -488,7 +488,7 @@ const skillsList = [
     name: 'Swimming',
     description: 'Reducesdrowningdamage',
     races: ['Drakeling', 'Human', 'Ratling'],
-    classes: [
+    professions: [
       'Barbarian',
       'Beastfighter',
       'Druid',
@@ -503,14 +503,14 @@ const skillsList = [
     name: 'Tactics',
     description: 'Increasestacticsbonusesanddecreasespenalties',
     races: ['None'],
-    classes: ['None'],
+    professions: ['None'],
     inGame: true
   },
   {
     name: 'Two Weapon Combat',
     description: 'Decreasesto-hitandenergycostpenaltieswhiledual-wielding',
     races: ['None'],
-    classes: [
+    professions: [
       'Assassin',
       'Barbarian',
       'Chaos Knight',
@@ -524,7 +524,7 @@ const skillsList = [
     name: 'Ventriloquism',
     description: 'Canbeusedtoconfusemonstersforseveralturns',
     races: ['Gnome'],
-    classes: ['Wizard'],
+    professions: ['Wizard'],
     inGame: false
   },
   {
@@ -532,7 +532,7 @@ const skillsList = [
     description:
       'Decreasesthetimetocutdowntrees,increasescriticalhitchanceagainstplantmonsters',
     races: ['None'],
-    classes: ['Barbarian', 'Druid', 'Farmer', 'Ranger'],
+    professions: ['Barbarian', 'Druid', 'Farmer', 'Ranger'],
     inGame: false
   }
 ]
@@ -540,10 +540,10 @@ const skillsList = [
 // const allCombinationsFormula = () => {
 //   let allCombosArray = []
 //   playableRaces.forEach(race => {
-//     playableClasses.forEach(playableClass => {
+//     playableProfessions.forEach(playableProfession => {
 //       allCombosArray.push({
 //         race,
-//         playableClass,
+//         playableProfession,
 //         skills: [],
 //         doubleSkills: []
 //       })
@@ -554,14 +554,14 @@ const skillsList = [
 //     allCombosArray.forEach(combo => {
 //       if (
 //         skill.races.includes(combo.race) &&
-//         skill.classes.includes(combo.playableClass)
+//         skill.professions.includes(combo.playableProfession)
 //       ) {
 //         return combo.doubleSkills.push(skill.name)
 //       }
 
 //       if (
 //         skill.races.includes(combo.race) ||
-//         skill.classes.includes(combo.playableClass)
+//         skill.professions.includes(combo.playableProfession)
 //       ) {
 //         return combo.skills.push(skill.name)
 //       }
@@ -574,6 +574,6 @@ const skillsList = [
 export {
   raceObjects,
   playableRaces,
-  playableClasses,
+  playableProfessions,
   skillsList
 }

@@ -16,7 +16,15 @@
 
         <ul class="race-list" v-if="!hiddenRaces.includes(race)">
           <li v-for="(combo, index) in combosForRace(race)" :key="`${combo}${index}`">
-            {{ combo.playableClass }}
+            <RouterLink
+              v-if="race !== 'No race'"
+              :to="{
+                name: 'SkillCalculator',
+                query: { race, profession: combo.playableProfession }
+              }"
+              >{{ combo.playableProfession }}</RouterLink
+            >
+            <span v-else>{{ combo.playableProfession }}</span>
           </li>
         </ul>
       </li>
@@ -26,6 +34,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { RouterLink } from 'vue-router'
 
 const props = defineProps({
   combosList: {

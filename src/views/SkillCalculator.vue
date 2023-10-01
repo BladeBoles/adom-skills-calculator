@@ -18,21 +18,21 @@
         </select>
       </div>
       <div class="choices">
-        <label class="race-class-label" for="player-classes"></label>
+        <label class="race-class-label" for="player-professions"></label>
         <select
           class="race-class-select"
-          :v-model="selectedClass"
-          @change="updateRoute($event, 'class')"
+          v-model="selectedProfession"
+          @change="updateRoute($event, 'profession')"
         >
           <option
-            v-for="(playerClass, index) in playableClasses"
+            v-for="(playerProfession, index) in playableProfessions"
             class="race-class-option"
-            :key="`${playerClass}${index}`"
+            :key="`${playerProfession}${index}`"
           >
-            <span v-if="playerClass === 'Bard'"> {{ playerClass }}*</span>
-            <span v-else-if="playerClass === 'Merchant'"> {{ playerClass }}** </span>
+            <span v-if="playerProfession === 'Bard'"> {{ playerProfession }}*</span>
+            <span v-else-if="playerProfession === 'Merchant'"> {{ playerProfession }}** </span>
             <span v-else>
-              {{ playerClass }}
+              {{ playerProfession }}
             </span>
           </option>
         </select>
@@ -59,7 +59,7 @@
             <i
               class="fa-solid fa-shield fa-sm"
               :class="
-                skill.source === 'class' || skill.source === 'both'
+                skill.source === 'profession' || skill.source === 'both'
                   ? 'skills-list-li__icon--visible'
                   : 'skills-list-li__icon--hidden'
               "
@@ -70,7 +70,7 @@
       </ul>
       <div class="skill-calculator__note-group skill-calculator__note-group--key">
         <p><i class="fa-solid fa-user fa-sm" style="color: #26a269"></i> Race</p>
-        <p><i class="fa-solid fa-shield fa-sm" style="color: #1a5fb4"></i> Class</p>
+        <p><i class="fa-solid fa-shield fa-sm" style="color: #1a5fb4"></i> Profession</p>
       </div>
       <div class="skill-calculator__note-group">
         <p>* Bards start with random skills</p>
@@ -84,11 +84,12 @@
 </template>
 
 <script setup>
-import { playableRaces, playableClasses, skillsList } from '../tables/skills.js'
-import { computed, onMounted } from 'vue'
+import { playableRaces, playableProfessions, skillsList } from '../tables/skills.js'
+import { computed, onMounted, defineProps } from 'vue'
 import { useRouter } from 'vue-router'
 
 const route = useRouter()
+console.log('🚀 ~ file: SkillCalculator.vue:92 ~ route:', route.query)
 
 const props = defineProps({
   race: {
@@ -100,15 +101,37 @@ const props = defineProps({
     default: 'Archer'
   }
 })
+const selectedProfession = computed({
+  get() {
+    return route.query?.profession || props.profession
+  },
+  set(newValue) {
+    console.log('🚀 ~ file: SkillCalculator.vue:107 ~ newValue:', newValue, route.query)
+    route.push({ query: { ...route.query, profession: newValue } })
+  }
+})
+const selectedRace = computed({
+  get() {
+    console.log('route.query: ', route.query)
+    return route.query?.race || props.race
+  },
+  set(newValue) {
+    console.log(
+      '🚀 ~ file: SkillCalculator.vue:115 ~ selectedRace ~ newValue:',
+      route.query,
+      newValue
+    )
 
-const selectedClass = computed(() => route?.query?.profession || props.profession)
-const selectedRace = computed(() => route?.query?.race || props.race)
+    route.push({ query: { ...route.query, race: newValue } })
+  }
+})
+console.log('selectedRace: ', selectedRace.value, 'selectedProfession: ', selectedProfession.value)
 
 if (!playableRaces.includes('No Race')) {
   playableRaces.push('No Race')
 }
-if (!playableClasses.includes('No Class')) {
-  playableClasses.push('No Class')
+if (!playableProfessions.includes('No Profession')) {
+  playableProfessions.push('No Profession')
 }
 
 const startingSkills = computed(() => {
@@ -121,15 +144,15 @@ const startingSkills = computed(() => {
   skillsList.forEach((skill) => {
     if (
       skill.races.includes(selectedRace.value || 'All') &&
-      skill.classes.includes(selectedClass.value || 'All')
+      skill.professions.includes(selectedProfession.value || 'All')
     ) {
       let skillObject = { name: `${skill.name}`, source: 'both' }
       startingSkillsListArray.push(skillObject)
     } else if (skill.races.includes(selectedRace.value)) {
       let skillObject = { name: skill.name, source: 'race' }
       startingSkillsListArray.push(skillObject)
-    } else if (skill.classes.includes(selectedClass.value)) {
-      let skillObject = { name: skill.name, source: 'class' }
+    } else if (skill.professions.includes(selectedProfession.value)) {
+      let skillObject = { name: skill.name, source: 'profession' }
       startingSkillsListArray.push(skillObject)
     }
   })
@@ -138,16 +161,17 @@ const startingSkills = computed(() => {
 })
 
 const updateRoute = (event, changed) => {
+  console.log(
+    '🚀 ~ file: SkillCalculator.vue:141 ~ updateRoute ~ event, changed:',
+    event.target.value,
+    changed
+  )
   const newQuery =
     changed === 'race'
-      ? { race: event.target.value, profession: selectedClass.value }
+      ? { race: event.target.value, profession: selectedProfession.value }
       : { race: selectedRace.value, profession: event.target.value }
   route.push({ query: newQuery })
 }
-
-onMounted(async () => {
-  route.push({ query: { race: props.race, profession: props.profession } })
-})
 </script>
 
 <style scoped>
