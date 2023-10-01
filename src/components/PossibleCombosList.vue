@@ -16,13 +16,14 @@
 
         <ul class="race-list" v-if="!hiddenRaces.includes(race)">
           <li v-for="(combo, index) in combosForRace(race)" :key="`${combo}${index}`">
-            <RouterLink
-              v-if="race !== 'No race'"
-              :to="{
-                name: 'SkillCalculator',
-                query: { race, profession: combo.playableProfession }
-              }"
-              >{{ combo.playableProfession }}</RouterLink
+            <span class="combos-list__race-list-link" v-if="race !== 'No race'"
+              ><RouterLink
+                :to="{
+                  name: 'SkillCalculator',
+                  query: { race, profession: combo.playableProfession }
+                }"
+                >{{ combo.playableProfession }}</RouterLink
+              ></span
             >
             <span v-else>{{ combo.playableProfession }}</span>
           </li>
@@ -121,6 +122,11 @@ div.race-list-header {
   background-color: #f5f5f5;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 22px;
+}
+
+div.race-list-header:hover {
+  text-decoration: underline;
 }
 
 .toggle-button {
@@ -153,5 +159,15 @@ div.race-list-header {
 }
 .possible-combos-list__no-selection-message {
   text-align: center;
+}
+.combos-list__race-list-link a {
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.combos-list__race-list-link a:hover {
+  text-decoration: underline;
 }
 </style>

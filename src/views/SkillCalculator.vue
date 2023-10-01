@@ -85,11 +85,10 @@
 
 <script setup>
 import { playableRaces, playableProfessions, skillsList } from '../tables/skills.js'
-import { computed, onMounted, defineProps } from 'vue'
+import { computed, defineProps } from 'vue'
 import { useRouter } from 'vue-router'
 
 const route = useRouter()
-console.log('🚀 ~ file: SkillCalculator.vue:92 ~ route:', route.query)
 
 const props = defineProps({
   race: {
@@ -106,26 +105,17 @@ const selectedProfession = computed({
     return route.query?.profession || props.profession
   },
   set(newValue) {
-    console.log('🚀 ~ file: SkillCalculator.vue:107 ~ newValue:', newValue, route.query)
     route.push({ query: { ...route.query, profession: newValue } })
   }
 })
 const selectedRace = computed({
   get() {
-    console.log('route.query: ', route.query)
     return route.query?.race || props.race
   },
   set(newValue) {
-    console.log(
-      '🚀 ~ file: SkillCalculator.vue:115 ~ selectedRace ~ newValue:',
-      route.query,
-      newValue
-    )
-
     route.push({ query: { ...route.query, race: newValue } })
   }
 })
-console.log('selectedRace: ', selectedRace.value, 'selectedProfession: ', selectedProfession.value)
 
 if (!playableRaces.includes('No Race')) {
   playableRaces.push('No Race')
@@ -161,11 +151,6 @@ const startingSkills = computed(() => {
 })
 
 const updateRoute = (event, changed) => {
-  console.log(
-    '🚀 ~ file: SkillCalculator.vue:141 ~ updateRoute ~ event, changed:',
-    event.target.value,
-    changed
-  )
   const newQuery =
     changed === 'race'
       ? { race: event.target.value, profession: selectedProfession.value }

@@ -27,22 +27,18 @@ const updateWantedSkills = (newSkillsList) => {
 }
 
 const findValidCombos = (desiredSkills = []) => {
-  try {
-    const comboPossibilities = []
-    allCombos.value.forEach((combination) => {
-      if (
-        desiredSkills.every(
-          (skill) =>
-            combination.skills.includes(skill.name) || combination.doubleSkills.includes(skill.name)
-        )
-      ) {
-        comboPossibilities.push(combination)
-      }
-    })
-    possibleCombos.value = comboPossibilities
-  } catch (error) {
-    console.log('error: ', error)
-  }
+  const comboPossibilities = []
+  allCombos.value.forEach((combination) => {
+    if (
+      desiredSkills.every(
+        (skill) =>
+          combination.skills.includes(skill.name) || combination.doubleSkills.includes(skill.name)
+      )
+    ) {
+      comboPossibilities.push(combination)
+    }
+  })
+  possibleCombos.value = comboPossibilities
 }
 
 /* TODO: Modify one allCombinations Array to be:

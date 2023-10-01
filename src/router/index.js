@@ -10,13 +10,15 @@ const router = createRouter({
       name: 'SkillCalculator',
       component: SkillCalculator,
       alias: '/',
-      props: (route) => {
-        console.log('🚀 ~ file: index.js:14 ~ route:', route.query)
+      props: route => {
         return { race: route.query?.race || 'Dark Elf', profession: route.query?.profession || 'Archer' }
       },
-      query: {
-        race: { default: 'Dark Elf' },
-        profession: { default: 'Archer' }
+      beforeEnter: (to, from, next) => {
+        if (!to.query.race || !to.query.profession) {
+          next({ name: 'SkillCalculator', query: { race: to.query.race || 'Dark Elf', profession: to.query.profession || 'Archer' } })
+        } else {
+          next()
+        }
       }
     },
     {
