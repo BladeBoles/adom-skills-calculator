@@ -65,6 +65,7 @@ const removeSkill = (skillToRemove) => {
 .column-div {
   display: flex;
   flex-direction: column;
+  margin-bottom: -20px;
 }
 ul {
   list-style-type: none;

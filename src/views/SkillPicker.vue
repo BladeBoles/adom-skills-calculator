@@ -9,6 +9,7 @@
         />
       </div>
     </form>
+    <div class="skill-picker__divider"></div>
     <PossibleCombosList :combosList="possibleCombos" />
   </div>
 </template>
@@ -118,8 +119,14 @@ watch(wantedSkills, () => findValidCombos(), { immediate: true })
 .skill-picker-form {
   display: flex;
   flex-direction: column;
-  width: 80vw;
   max-width: 400px;
   justify-content: space-between;
+}
+
+.skill-picker__divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(221, 221, 221);
+  margin: 20px 0px;
 }
 </style>

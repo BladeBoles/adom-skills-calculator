@@ -44,7 +44,7 @@ const chooseSkill = (chosenSkill) => {
 <style scoped>
 .add-skill-button {
   border: 2px solid transparent;
-  margin: 15px 0px;
+  margin: 15px 0px 0px 0px;
   padding: 0;
   font-size: 20px;
   transition: border-color 0.2s ease-in-out;
