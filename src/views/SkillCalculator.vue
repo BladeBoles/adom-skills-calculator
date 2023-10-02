@@ -72,6 +72,16 @@
         <p><i class="fa-solid fa-user fa-sm" style="color: #26a269"></i> Race</p>
         <p><i class="fa-solid fa-shield fa-sm" style="color: #1a5fb4"></i> Profession</p>
       </div>
+      <button class="skill-calculator__picker-link">
+        <RouterLink
+          :to="{
+            name: 'SkillPicker',
+            query: { skills: (startingSkills || []).map((skill) => skill.name) }
+          }"
+        >
+          Pick these skills
+        </RouterLink>
+      </button>
       <div class="skill-calculator__note-group">
         <p>* Bards start with random skills</p>
         <p>** Merchant skills depend on specialty</p>
@@ -86,7 +96,7 @@
 <script setup>
 import { playableRaces, playableProfessions, skillsList } from '../tables/skills.js'
 import { computed, defineProps } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute, useRouter, RouterLink } from 'vue-router'
 
 const route = useRoute()
 const router = useRouter()
@@ -257,5 +267,21 @@ p {
 .skill-calculator__note-group--key {
   display: flex;
   justify-content: flex-start;
+}
+
+.skill-calculator__picker-link {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.skill-calculator__picker-link a {
+  text-decoration: none;
+  color: inherit;
 }
 </style>

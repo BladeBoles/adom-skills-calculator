@@ -33,6 +33,7 @@ const allCombos = computed(() => JSON.parse(JSON.stringify(allCombosJson)))
 
 const wantedSkills = computed({
   get() {
+    console.log(route.query?.skills)
     const toReturn =
       route.query?.skills && route.query.skills.length ? route.query.skills : props.skills
     if (typeof toReturn === 'string') {
@@ -60,17 +61,25 @@ const removeSkill = (skillToRemove) => {
 }
 
 const findValidCombos = () => {
+  console.log('wantedskills: ', wantedSkills.value)
   const comboPossibilities = []
   allCombos.value.forEach((combination) => {
     if (
       wantedSkills.value.every(
-        (skill) => combination.skills.includes(skill) || combination.doubleSkills.includes(skill)
+        (skill) =>
+          combination.skills.includes(skill) ||
+          combination.doubleSkills.includes(skill) ||
+          ['Haggling', 'Listening', 'Climbing', 'First Aid'].includes(skill)
       )
     ) {
       comboPossibilities.push(combination)
     }
   })
   possibleCombos.value = comboPossibilities
+  console.log(
+    '🚀 ~ file: SkillPicker.vue:65 ~ findValidCombos ~ comboPossibilities:',
+    comboPossibilities
+  )
 }
 
 watch(wantedSkills, () => findValidCombos(), { immediate: true })
