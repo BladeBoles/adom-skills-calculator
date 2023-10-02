@@ -24,7 +24,17 @@ const router = createRouter({
     {
       path: '/skill-picker',
       name: 'SkillPicker',
-      component: SkillPicker
+      component: SkillPicker,
+      props: route => {
+        return { skills: route.query?.skills || [] }
+      },
+      beforeEnter: (to, from, next) => {
+        if (!to.query.skills) {
+          next({ name: 'SkillPicker', query: { skills: [] } })
+        } else {
+          next()
+        }
+      }
     }
   ]
 })

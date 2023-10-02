@@ -1,13 +1,13 @@
 <template>
   <div class="column-div">
-    <SkillChoiceModal @skill-chosen="showChosen" />
+    <SkillChoiceModal @skill-chosen="addSkill" />
     <ul>
-      <li v-for="(skill, index) in chosenSkills" :key="`${skill.name}${index}`">
+      <li v-for="(skill, index) in skills" :key="`${skill}${index}`">
         <span
           class="skill-name-div"
-          :class="{ 'skill-name-div--last': index === chosenSkills.length - 1 }"
-          ><span>{{ skill.name }}</span
-          ><i id="minus" class="fa-solid fa-square-minus fa-xl" @click="removeSkill(index)"
+          :class="{ 'skill-name-div--last': index === skills.length - 1 }"
+          ><span>{{ skill }}</span
+          ><i id="minus" class="fa-solid fa-square-minus fa-xl" @click="removeSkill(skill)"
         /></span>
       </li>
     </ul>
@@ -16,22 +16,29 @@
 
 <script setup>
 import SkillChoiceModal from './modals/SkillChoiceModal.vue'
-import { ref } from 'vue'
 
-const emit = defineEmits(['skill-added'])
+const emit = defineEmits(['skill-added', 'skill-removed'])
 
-const chosenSkills = ref([])
-
-const showChosen = (chosenSkill) => {
-  if (chosenSkills.value.filter((skill) => skill.name === chosenSkill).length === 0) {
-    chosenSkills.value.push({ name: chosenSkill })
+const props = defineProps({
+  skills: {
+    type: Array,
+    default: () => []
   }
-  emit('skill-added', chosenSkills.value)
+})
+
+const addSkill = (newSkill) => {
+  console.log('🚀 ~ file: SkillPickerColumn.vue:30 ~ addSkill ~ newSkill:', newSkill)
+  // if (chosenSkills.value.filter((skill) => skill.name === newSkill).length === 0) {
+  //   chosenSkills.value.push({ name: newSkill })
+  // }
+  if (!props.skills.includes(newSkill)) {
+    emit('skill-added', newSkill)
+  }
+  // emit('skill-added', chosenSkills.value)
 }
 
 const removeSkill = (skillToRemove) => {
-  chosenSkills.value.splice(skillToRemove, 1)
-  emit('skill-added', chosenSkills.value)
+  emit('skill-removed', skillToRemove)
 }
 </script>
 

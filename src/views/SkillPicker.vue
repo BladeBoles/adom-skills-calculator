@@ -2,7 +2,11 @@
   <div class="double-columns-container">
     <form class="skill-picker-form" @submit.prevent="submit">
       <div class="columns-component-div">
-        <SkillPickerColumn @skill-added="updateWantedSkills" />
+        <SkillPickerColumn
+          :skills="wantedSkills"
+          @skill-added="addSkill"
+          @skill-removed="removeSkill"
+        />
       </div>
     </form>
     <PossibleCombosList :combosList="possibleCombos" />
@@ -12,27 +16,54 @@
 <script setup>
 import SkillPickerColumn from '../components/SkillPickerColumn.vue'
 import PossibleCombosList from '../components/PossibleCombosList.vue'
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import allCombosJson from '../tables/skills.json'
+import { useRoute, useRouter } from 'vue-router'
 
+const props = defineProps({
+  skills: {
+    type: Array,
+    default: () => []
+  }
+})
+const route = useRoute()
+const router = useRouter()
 const allCombos = computed(() => JSON.parse(JSON.stringify(allCombosJson)))
 
-const wantedSkills = ref([])
+const wantedSkills = computed({
+  get() {
+    const toReturn =
+      route.query?.skills && route.query.skills.length ? route.query.skills : props.skills
+    if (typeof toReturn === 'string') {
+      return [toReturn]
+    } else {
+      return toReturn
+    }
+  },
+  set(newValue) {
+    const newQuery = { skills: newValue }
+    router.push({ query: newQuery })
+  }
+})
 
 const possibleCombos = ref([])
 
-const updateWantedSkills = (newSkillsList) => {
-  wantedSkills.value = newSkillsList
-  findValidCombos(wantedSkills.value)
+const addSkill = (newSkill) => {
+  if (!wantedSkills.value.includes(newSkill)) {
+    wantedSkills.value = Array.from(new Set([...wantedSkills.value, newSkill]))
+  }
 }
 
-const findValidCombos = (desiredSkills = []) => {
+const removeSkill = (skillToRemove) => {
+  wantedSkills.value = wantedSkills.value.filter((skill) => skill !== skillToRemove)
+}
+
+const findValidCombos = () => {
   const comboPossibilities = []
   allCombos.value.forEach((combination) => {
     if (
-      desiredSkills.every(
-        (skill) =>
-          combination.skills.includes(skill.name) || combination.doubleSkills.includes(skill.name)
+      wantedSkills.value.every(
+        (skill) => combination.skills.includes(skill) || combination.doubleSkills.includes(skill)
       )
     ) {
       comboPossibilities.push(combination)
@@ -40,6 +71,8 @@ const findValidCombos = (desiredSkills = []) => {
   })
   possibleCombos.value = comboPossibilities
 }
+
+watch(wantedSkills, () => findValidCombos(), { immediate: true })
 
 /* TODO: Modify one allCombinations Array to be:
   {
@@ -52,7 +85,7 @@ const findValidCombos = (desiredSkills = []) => {
   Then display icon(s) by each skill showing where it came from.
   On hover the icon has explanation.
 
-  This array could be a single source of truth.  But we could also have 
+  This array could be a single source of truth.  But we could also have
 
   {
     playableRace: string

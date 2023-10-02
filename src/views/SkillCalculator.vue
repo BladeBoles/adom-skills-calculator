@@ -29,8 +29,8 @@
             class="race-class-option"
             :key="`${playerProfession}${index}`"
           >
-            <span v-if="playerProfession === 'Bard'"> {{ playerProfession }}*</span>
-            <span v-else-if="playerProfession === 'Merchant'"> {{ playerProfession }}** </span>
+            <span v-if="playerProfession === 'Bard'"> {{ playerProfession }}</span>
+            <span v-else-if="playerProfession === 'Merchant'"> {{ playerProfession }} </span>
             <span v-else>
               {{ playerProfession }}
             </span>
@@ -86,9 +86,10 @@
 <script setup>
 import { playableRaces, playableProfessions, skillsList } from '../tables/skills.js'
 import { computed, defineProps } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
-const route = useRouter()
+const route = useRoute()
+const router = useRouter()
 
 const props = defineProps({
   race: {
@@ -105,7 +106,7 @@ const selectedProfession = computed({
     return route.query?.profession || props.profession
   },
   set(newValue) {
-    route.push({ query: { ...route.query, profession: newValue } })
+    router.push({ query: { ...route.query, profession: newValue } })
   }
 })
 const selectedRace = computed({
@@ -113,7 +114,7 @@ const selectedRace = computed({
     return route.query?.race || props.race
   },
   set(newValue) {
-    route.push({ query: { ...route.query, race: newValue } })
+    router.push({ query: { ...route.query, race: newValue } })
   }
 })
 
@@ -155,7 +156,7 @@ const updateRoute = (event, changed) => {
     changed === 'race'
       ? { race: event.target.value, profession: selectedProfession.value }
       : { race: selectedRace.value, profession: event.target.value }
-  route.push({ query: newQuery })
+  router.push({ query: newQuery })
 }
 </script>
 

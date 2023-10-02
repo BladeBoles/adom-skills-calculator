@@ -57,7 +57,7 @@ const hiddenRaces = ref([
   'Orc',
   'Ratling',
   'Troll',
-  'No Race'
+  'No race'
 ])
 
 const uniqueRaces = computed(() => {
@@ -122,7 +122,7 @@ div.race-list-header {
   background-color: #f5f5f5;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 div.race-list-header:hover {
@@ -164,7 +164,7 @@ div.race-list-header:hover {
   cursor: pointer;
   color: #333;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .combos-list__race-list-link a:hover {
