@@ -1,6 +1,6 @@
 <template>
   <div class="combos-list">
-    <ul class="combos-list__combos-dropdowns" v-if="combosList.length > 0">
+    <ul class="combos-list__combos-dropdowns" v-if="combosList.length > 0 && sortBy === 'race'">
       <li
         class="combos-list__dropdown-item"
         v-for="(race, index) in uniqueRaces"
@@ -33,6 +33,41 @@
         </ul>
       </li>
     </ul>
+    <ul v-else-if="combosList.length > 0">
+      <li
+        class="combos-list__dropdown-item"
+        v-for="(profession, index) in uniqueProfessions"
+        :key="`${profession}${index}`"
+      >
+        <div class="race-list-header" @click="toggleProfessionVisibility(profession)">
+          <h4>
+            {{ profession }}
+            <span class="combos-list__combo-count"
+              >({{ combosForProfession(profession).length }})</span
+            >
+          </h4>
+          <div class="toggle-button">
+            <i class="fa-solid fa-caret-up" v-if="!hiddenProfessions.includes(profession)" />
+            <i class="fa-solid fa-caret-down" v-else />
+          </div>
+        </div>
+
+        <ul class="race-list" v-if="!hiddenProfessions.includes(profession)">
+          <li v-for="(combo, index) in combosForProfession(profession)" :key="`${combo}${index}`">
+            <span class="combos-list__race-list-link" v-if="profession !== 'No profession'"
+              ><RouterLink
+                :to="{
+                  name: 'SkillCalculator',
+                  query: { profession, race: combo.race }
+                }"
+                >{{ combo.race }}</RouterLink
+              ></span
+            >
+            <span v-else>{{ combo.playableProfession }}</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -44,6 +79,10 @@ const props = defineProps({
   combosList: {
     type: Array,
     required: true
+  },
+  sortBy: {
+    type: String,
+    default: 'race'
   }
 })
 
@@ -61,6 +100,30 @@ const hiddenRaces = ref([
   'Ratling',
   'Troll',
   'No race'
+])
+const hiddenProfessions = ref([
+  'Archer',
+  'Assassin',
+  'Barbarian',
+  'Bard',
+  'Beastfighter',
+  'Chaos Knight',
+  'Druid',
+  'Duelist',
+  'Elementalist',
+  'Farmer',
+  'Fighter',
+  'Healer',
+  'Merchant',
+  'Mindcrafter',
+  'Monk',
+  'Necromancer',
+  'Paladin',
+  'Priest',
+  'Ranger',
+  'Thief',
+  'Weaponsmith',
+  'Wizard'
 ])
 
 const uniqueRaces = computed(() => {
@@ -84,6 +147,26 @@ const toggleRaceVisibility = (race) => {
     hiddenRaces.value.push(race)
   }
 }
+const combosForProfession = (profession) => {
+  return props.combosList.filter((combo) => combo.playableProfession === profession)
+}
+
+const toggleProfessionVisibility = (profession) => {
+  console.log(
+    '🚀 ~ file: PossibleCombosList.vue:155 ~ toggleProfessionVisibility ~ profession:',
+    profession
+  )
+  if (hiddenProfessions.value.includes(profession)) {
+    hiddenProfessions.value.splice(hiddenProfessions.value.indexOf(profession), 1)
+  } else {
+    hiddenProfessions.value.push(profession)
+  }
+}
+
+const uniqueProfessions = computed(() => {
+  const professions = props.combosList.map((combo) => combo.playableProfession)
+  return [...new Set(professions)]
+})
 </script>
 
 <style scoped>

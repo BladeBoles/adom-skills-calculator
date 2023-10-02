@@ -27,14 +27,9 @@ const props = defineProps({
 })
 
 const addSkill = (newSkill) => {
-  console.log('🚀 ~ file: SkillPickerColumn.vue:30 ~ addSkill ~ newSkill:', newSkill)
-  // if (chosenSkills.value.filter((skill) => skill.name === newSkill).length === 0) {
-  //   chosenSkills.value.push({ name: newSkill })
-  // }
   if (!props.skills.includes(newSkill)) {
     emit('skill-added', newSkill)
   }
-  // emit('skill-added', chosenSkills.value)
 }
 
 const removeSkill = (skillToRemove) => {

@@ -10,7 +10,11 @@
       </div>
     </form>
     <div class="skill-picker__divider"></div>
-    <PossibleCombosList :combosList="possibleCombos" />
+    <input type="radio" id="race" name="sortByRace" v-model="sortBy" value="race" />
+    <label for="race">Race</label>
+    <input type="radio" id="profession" name="sortByRace" v-model="sortBy" value="profession" />
+    <label for="race">Profession</label>
+    <PossibleCombosList :sortBy="sortBy" :combosList="possibleCombos" />
   </div>
 </template>
 
@@ -27,13 +31,13 @@ const props = defineProps({
     default: () => []
   }
 })
+const sortBy = ref('race')
 const route = useRoute()
 const router = useRouter()
 const allCombos = computed(() => JSON.parse(JSON.stringify(allCombosJson)))
 
 const wantedSkills = computed({
   get() {
-    console.log(route.query?.skills)
     const toReturn =
       route.query?.skills && route.query.skills.length ? route.query.skills : props.skills
     if (typeof toReturn === 'string') {
@@ -61,7 +65,6 @@ const removeSkill = (skillToRemove) => {
 }
 
 const findValidCombos = () => {
-  console.log('wantedskills: ', wantedSkills.value)
   const comboPossibilities = []
   allCombos.value.forEach((combination) => {
     if (
@@ -76,10 +79,6 @@ const findValidCombos = () => {
     }
   })
   possibleCombos.value = comboPossibilities
-  console.log(
-    '🚀 ~ file: SkillPicker.vue:65 ~ findValidCombos ~ comboPossibilities:',
-    comboPossibilities
-  )
 }
 
 watch(wantedSkills, () => findValidCombos(), { immediate: true })
