@@ -7,7 +7,10 @@
         :key="`${race}${index}`"
       >
         <div class="race-list-header" @click="toggleRaceVisibility(race)">
-          <h4>{{ race }}</h4>
+          <h4>
+            {{ race }}
+            <span class="combos-list__combo-count">({{ combosForRace(race).length }})</span>
+          </h4>
           <div class="toggle-button">
             <i class="fa-solid fa-caret-up" v-if="!hiddenRaces.includes(race)" />
             <i class="fa-solid fa-caret-down" v-else />
@@ -169,5 +172,10 @@ div.race-list-header:hover {
 
 .combos-list__race-list-link a:hover {
   text-decoration: underline;
+}
+
+.combos-list__combo-count {
+  color: #333;
+  font-weight: lighter;
 }
 </style>
