@@ -10,10 +10,27 @@
       </div>
     </form>
     <div class="skill-picker__divider"></div>
-    <input type="radio" id="race" name="sortByRace" v-model="sortBy" value="race" />
-    <label for="race">Race</label>
-    <input type="radio" id="profession" name="sortByRace" v-model="sortBy" value="profession" />
-    <label for="race">Profession</label>
+    <div class="skill-picker__toggle-switch">
+      <span>Group by: </span>
+      <input
+        class="skill-picker__race-radio"
+        type="radio"
+        id="race"
+        name="sortByRace"
+        v-model="sortBy"
+        value="race"
+      />
+      <label for="race">Race</label>
+      <input
+        class="skill-picker__profession-radio"
+        type="radio"
+        id="profession"
+        name="sortByRace"
+        v-model="sortBy"
+        value="profession"
+      />
+      <label for="profession">Profession</label>
+    </div>
     <PossibleCombosList :sortBy="sortBy" :combosList="possibleCombos" />
   </div>
 </template>
@@ -82,32 +99,6 @@ const findValidCombos = () => {
 }
 
 watch(wantedSkills, () => findValidCombos(), { immediate: true })
-
-/* TODO: Modify one allCombinations Array to be:
-  {
-    playableRace: string
-    playableProfession: string
-    raceSkills: string[]
-    classSkills: string[]
-  }[]
-
-  Then display icon(s) by each skill showing where it came from.
-  On hover the icon has explanation.
-
-  This array could be a single source of truth.  But we could also have
-
-  {
-    playableRace: string
-    skills: string[]
-  }[]
-  and
-  {
-    playableProfession: string
-    skills: string[]
-  }[]
-  For faster lookup on the calculator?
-
-*/
 </script>
 
 <style scoped>
@@ -136,5 +127,39 @@ watch(wantedSkills, () => findValidCombos(), { immediate: true })
   height: 1px;
   background-color: rgb(221, 221, 221);
   margin: 20px 0px;
+}
+
+.skill-picker__toggle-switch {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-picker__toggle-switch span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.skill-picker__race-radio {
+  display: none;
+  margin-right: 10px;
+}
+
+.skill-picker__profession-radio {
+  display: none;
+}
+
+.skill-picker__toggle-switch label {
+  color: black;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.skill-picker__toggle-switch input[type='radio']:checked + label {
+  background-color: green;
+  color: #fff;
 }
 </style>

@@ -95,7 +95,7 @@
 
 <script setup>
 import { playableRaces, playableProfessions, skillsList } from '../tables/skills.js'
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import { useRoute, useRouter, RouterLink } from 'vue-router'
 
 const route = useRoute()

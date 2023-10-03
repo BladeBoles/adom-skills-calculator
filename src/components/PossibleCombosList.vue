@@ -152,10 +152,6 @@ const combosForProfession = (profession) => {
 }
 
 const toggleProfessionVisibility = (profession) => {
-  console.log(
-    '🚀 ~ file: PossibleCombosList.vue:155 ~ toggleProfessionVisibility ~ profession:',
-    profession
-  )
   if (hiddenProfessions.value.includes(profession)) {
     hiddenProfessions.value.splice(hiddenProfessions.value.indexOf(profession), 1)
   } else {
