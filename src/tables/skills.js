@@ -397,7 +397,7 @@ const skillsList = [
   {
     name: 'Metallurgy',
     description: 'Canbeusedtoidentifyitemmaterialifitismetallic',
-    races: ['Dwarf', ' Orc'],
+    races: ['Dwarf', 'Orc'],
     professions: ['Elementalist', 'Fighter', 'Merchant', 'Weaponsmith'],
     inGame: false
   },
