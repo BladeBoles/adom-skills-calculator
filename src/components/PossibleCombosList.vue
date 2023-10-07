@@ -19,7 +19,7 @@
 
         <ul class="race-list" v-if="!hiddenRaces.includes(race)">
           <li v-for="(combo, index) in combosForRace(race)" :key="`${combo}${index}`">
-            <span class="combos-list__race-list-link" v-if="race !== 'No race'"
+            <span class="combos-list__race-list-link" v-if="race !== 'No Race'"
               ><RouterLink
                 :to="{
                   name: 'SkillCalculator',
@@ -99,7 +99,7 @@ const hiddenRaces = ref([
   'Orc',
   'Ratling',
   'Troll',
-  'No race'
+  'No Race'
 ])
 const hiddenProfessions = ref([
   'Archer',
