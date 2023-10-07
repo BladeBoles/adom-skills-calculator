@@ -2989,6 +2989,7 @@
       "Dodge",
       "Find Weakness",
       "Fletchery",
+      "Metallurgy",
       "Mining",
       "Stealth"
     ],
@@ -3003,6 +3004,7 @@
       "Archery",
       "Detect Traps",
       "Dodge",
+      "Metallurgy",
       "Mining",
       "Pick Locks",
       "Stealth",
@@ -3019,6 +3021,7 @@
       "Dodge",
       "Find Weakness",
       "Herbalism",
+      "Metallurgy",
       "Mining",
       "Survival",
       "Swimming",
@@ -3030,7 +3033,7 @@
   {
     "race": "Orc",
     "playableProfession": "Bard",
-    "skills": ["Backstabbing", "Find Weakness", "Mining", "Music"],
+    "skills": ["Backstabbing", "Find Weakness", "Metallurgy", "Mining", "Music"],
     "doubleSkills": []
   },
   {
@@ -3043,6 +3046,7 @@
       "Find Weakness",
       "Healing",
       "Herbalism",
+      "Metallurgy",
       "Mining",
       "Stealth",
       "Survival",
@@ -3053,7 +3057,7 @@
   {
     "race": "Orc",
     "playableProfession": "Chaos Knight",
-    "skills": ["Athletics", "Dodge", "Mining", "Two Weapon Combat"],
+    "skills": ["Athletics", "Dodge", "Metallurgy", "Mining", "Two Weapon Combat"],
     "doubleSkills": ["Backstabbing", "Find Weakness"]
   },
   {
@@ -3067,6 +3071,7 @@
       "Healing",
       "Herbalism",
       "Literacy",
+      "Metallurgy",
       "Mining",
       "Survival",
       "Swimming",
@@ -3085,6 +3090,7 @@
       "Dodge",
       "Healing",
       "Law",
+      "Metallurgy",
       "Mining"
     ],
     "doubleSkills": ["Find Weakness"]
@@ -3099,11 +3105,10 @@
       "Gemology",
       "Healing",
       "Literacy",
-      "Metallurgy",
       "Mining",
       "Swimming"
     ],
-    "doubleSkills": []
+    "doubleSkills": ["Metallurgy"]
   },
   {
     "race": "Orc",
@@ -3117,6 +3122,7 @@
       "Food Preservation",
       "Gardening",
       "Herbalism",
+      "Metallurgy",
       "Mining",
       "Smithing",
       "Stealth",
@@ -3133,13 +3139,12 @@
       "Athletics",
       "Backstabbing",
       "Dodge",
-      "Metallurgy",
       "Mining",
       "Stealth",
       "Swimming",
       "Two Weapon Combat"
     ],
-    "doubleSkills": ["Find Weakness"]
+    "doubleSkills": ["Find Weakness", "Metallurgy"]
   },
   {
     "race": "Orc",
@@ -3152,6 +3157,7 @@
       "Healing",
       "Herbalism",
       "Literacy",
+      "Metallurgy",
       "Mining"
     ],
     "doubleSkills": ["Find Weakness"]
@@ -3168,12 +3174,11 @@
       "Gemology",
       "Herbalism",
       "Literacy",
-      "Metallurgy",
       "Mining",
       "Pick Pockets",
       "Survival"
     ],
-    "doubleSkills": []
+    "doubleSkills": ["Metallurgy"]
   },
   {
     "race": "Orc",
@@ -3185,6 +3190,7 @@
       "Gemology",
       "Herbalism",
       "Literacy",
+      "Metallurgy",
       "Mining",
       "Music",
       "Stealth"
@@ -3202,6 +3208,7 @@
       "Dodge",
       "Healing",
       "Literacy",
+      "Metallurgy",
       "Mining",
       "Stealth"
     ],
@@ -3218,6 +3225,7 @@
       "Food Preservation",
       "Herbalism",
       "Literacy",
+      "Metallurgy",
       "Mining",
       "Necromancy",
       "Stealth"
@@ -3236,6 +3244,7 @@
       "Healing",
       "Law",
       "Literacy",
+      "Metallurgy",
       "Mining",
       "Stealth",
       "Swimming",
@@ -3254,6 +3263,7 @@
       "Healing",
       "Herbalism",
       "Literacy",
+      "Metallurgy",
       "Mining"
     ],
     "doubleSkills": []
@@ -3271,6 +3281,7 @@
       "Food Preservation",
       "Healing",
       "Herbalism",
+      "Metallurgy",
       "Mining",
       "Swimming",
       "Two Weapon Combat",
@@ -3288,6 +3299,7 @@
       "Detect Traps",
       "Disarm Traps",
       "Find Weakness",
+      "Metallurgy",
       "Mining",
       "Pick Locks",
       "Pick Pockets",
@@ -3304,11 +3316,10 @@
       "Backstabbing",
       "Concentration",
       "Detect Traps",
-      "Metallurgy",
       "Mining",
       "Smithing"
     ],
-    "doubleSkills": ["Find Weakness"]
+    "doubleSkills": ["Find Weakness", "Metallurgy"]
   },
   {
     "race": "Orc",
@@ -3321,6 +3332,7 @@
       "Healing",
       "Herbalism",
       "Literacy",
+      "Metallurgy",
       "Mining",
       "Stealth",
       "Ventriloquism"
@@ -3330,7 +3342,7 @@
   {
     "race": "Orc",
     "playableProfession": "No Profession",
-    "skills": ["Backstabbing", "Find Weakness", "Mining"],
+    "skills": ["Backstabbing", "Find Weakness", "Metallurgy", "Mining"],
     "doubleSkills": []
   },
   {
