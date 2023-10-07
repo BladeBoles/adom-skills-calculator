@@ -84,7 +84,8 @@
       </button>
       <div class="skill-calculator__note-group">
         <p>* Bards start with random skills</p>
-        <p>** Merchant skills depend on specialty</p>
+        <p>** Potion Merchants receive Alchemy</p>
+        <p>*** Characters with Learning > 9 get Literacy</p>
       </div>
       <div>
         <p>Climbing, first aid, haggling and listening are available to all characters</p>

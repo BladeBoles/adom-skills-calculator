@@ -28,12 +28,13 @@
       "Dodge",
       "Find Weakness",
       "Herbalism",
+      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Stealth"]
+    "doubleSkills": []
   },
   {
     "race": "Dark Elf",
@@ -107,7 +108,6 @@
     "playableProfession": "Farmer",
     "skills": [
       "Alertness",
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Find Weakness",
@@ -239,7 +239,6 @@
       "Healing",
       "Herbalism",
       "Stealth",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -251,7 +250,6 @@
     "playableProfession": "Thief",
     "skills": [
       "Appraising",
-      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Find Weakness",
@@ -340,7 +338,6 @@
       "Food Preservation",
       "Herbalism",
       "Music",
-      "Stealth",
       "Survival",
       "Two Weapon Combat",
       "Woodcraft"
@@ -438,7 +435,6 @@
     "playableProfession": "Farmer",
     "skills": [
       "Alertness",
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Fletchery",
@@ -600,7 +596,6 @@
       "Healing",
       "Herbalism",
       "Music",
-      "Survival",
       "Two Weapon Combat",
       "Woodcraft"
     ],
@@ -611,7 +606,6 @@
     "playableProfession": "Thief",
     "skills": [
       "Appraising",
-      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Food Preservation",
@@ -712,7 +706,6 @@
       "Metallurgy",
       "Mining",
       "Smithing",
-      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
@@ -816,7 +809,6 @@
     "race": "Dwarf",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Detect Traps",
@@ -992,7 +984,6 @@
       "Metallurgy",
       "Mining",
       "Smithing",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -1005,7 +996,6 @@
     "skills": [
       "Alertness",
       "Appraising",
-      "Backstabbing",
       "Disarm Traps",
       "Metallurgy",
       "Mining",
@@ -1094,7 +1084,6 @@
       "Herbalism",
       "Mining",
       "Pick Pockets",
-      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
@@ -1199,7 +1188,6 @@
     "race": "Gnome",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Fletchery",
@@ -1374,7 +1362,6 @@
       "Herbalism",
       "Mining",
       "Pick Pockets",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Ventriloquism",
@@ -1388,7 +1375,6 @@
     "skills": [
       "Alertness",
       "Appraising",
-      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Gemology",
@@ -1442,8 +1428,8 @@
   {
     "race": "Gray Elf",
     "playableProfession": "Archer",
-    "skills": ["Alertness", "Archery", "Concentration", "Fletchery", "Literacy"],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "skills": ["Alertness", "Archery", "Concentration", "Fletchery", "Literacy", "Stealth"],
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
@@ -1457,9 +1443,10 @@
       "Find Weakness",
       "Literacy",
       "Pick Locks",
+      "Stealth",
       "Two Weapon Combat"
     ],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
@@ -1473,31 +1460,24 @@
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Bard",
-    "skills": ["Dodge", "Literacy", "Music", "Stealth"],
+    "skills": ["Dodge", "Literacy", "Music"],
     "doubleSkills": []
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Beastfighter",
-    "skills": ["Athletics", "Healing", "Herbalism", "Literacy", "Survival", "Swimming"],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "skills": ["Athletics", "Healing", "Herbalism", "Literacy", "Stealth", "Survival", "Swimming"],
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Chaos Knight",
-    "skills": [
-      "Athletics",
-      "Backstabbing",
-      "Find Weakness",
-      "Literacy",
-      "Stealth",
-      "Two Weapon Combat"
-    ],
+    "skills": ["Athletics", "Backstabbing", "Find Weakness", "Literacy", "Two Weapon Combat"],
     "doubleSkills": ["Dodge"]
   },
   {
@@ -1509,7 +1489,6 @@
       "Gardening",
       "Healing",
       "Herbalism",
-      "Stealth",
       "Survival",
       "Swimming",
       "Woodcraft"
@@ -1526,30 +1505,20 @@
       "Find Weakness",
       "Healing",
       "Law",
-      "Literacy",
-      "Stealth"
+      "Literacy"
     ],
     "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Elementalist",
-    "skills": [
-      "Concentration",
-      "Dodge",
-      "Gemology",
-      "Healing",
-      "Metallurgy",
-      "Stealth",
-      "Swimming"
-    ],
+    "skills": ["Concentration", "Dodge", "Gemology", "Healing", "Metallurgy", "Swimming"],
     "doubleSkills": ["Literacy"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Dodge",
@@ -1559,10 +1528,11 @@
       "Herbalism",
       "Literacy",
       "Smithing",
+      "Stealth",
       "Survival",
       "Woodcraft"
     ],
-    "doubleSkills": ["Stealth"]
+    "doubleSkills": []
   },
   {
     "race": "Gray Elf",
@@ -1573,10 +1543,11 @@
       "Find Weakness",
       "Literacy",
       "Metallurgy",
+      "Stealth",
       "Swimming",
       "Two Weapon Combat"
     ],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Gray Elf",
@@ -1588,8 +1559,7 @@
       "Dodge",
       "Find Weakness",
       "Healing",
-      "Herbalism",
-      "Stealth"
+      "Herbalism"
     ],
     "doubleSkills": ["Literacy"]
   },
@@ -1605,7 +1575,6 @@
       "Herbalism",
       "Metallurgy",
       "Pick Pockets",
-      "Stealth",
       "Survival"
     ],
     "doubleSkills": ["Literacy"]
@@ -1613,14 +1582,14 @@
   {
     "race": "Gray Elf",
     "playableProfession": "Mindcrafter",
-    "skills": ["Concentration", "Dodge", "Gemology", "Herbalism", "Music"],
-    "doubleSkills": ["Literacy", "Stealth"]
+    "skills": ["Concentration", "Dodge", "Gemology", "Herbalism", "Music", "Stealth"],
+    "doubleSkills": ["Literacy"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Monk",
-    "skills": ["Alertness", "Athletics", "Concentration", "Find Weakness", "Healing"],
-    "doubleSkills": ["Dodge", "Literacy", "Stealth"]
+    "skills": ["Alertness", "Athletics", "Concentration", "Find Weakness", "Healing", "Stealth"],
+    "doubleSkills": ["Dodge", "Literacy"]
   },
   {
     "race": "Gray Elf",
@@ -1633,20 +1602,29 @@
       "Find Weakness",
       "Food Preservation",
       "Herbalism",
-      "Necromancy"
+      "Necromancy",
+      "Stealth"
     ],
-    "doubleSkills": ["Literacy", "Stealth"]
+    "doubleSkills": ["Literacy"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Paladin",
-    "skills": ["Athletics", "Concentration", "Healing", "Law", "Swimming", "Two Weapon Combat"],
-    "doubleSkills": ["Dodge", "Literacy", "Stealth"]
+    "skills": [
+      "Athletics",
+      "Concentration",
+      "Healing",
+      "Law",
+      "Stealth",
+      "Swimming",
+      "Two Weapon Combat"
+    ],
+    "doubleSkills": ["Dodge", "Literacy"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Priest",
-    "skills": ["Concentration", "Detect Item Status", "Dodge", "Healing", "Herbalism", "Stealth"],
+    "skills": ["Concentration", "Detect Item Status", "Dodge", "Healing", "Herbalism"],
     "doubleSkills": ["Literacy"]
   },
   {
@@ -1660,8 +1638,6 @@
       "Healing",
       "Herbalism",
       "Literacy",
-      "Stealth",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -1674,15 +1650,15 @@
     "skills": [
       "Alertness",
       "Appraising",
-      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Dodge",
       "Literacy",
       "Pick Locks",
-      "Pick Pockets"
+      "Pick Pockets",
+      "Stealth"
     ],
-    "doubleSkills": ["Stealth"]
+    "doubleSkills": []
   },
   {
     "race": "Gray Elf",
@@ -1696,21 +1672,28 @@
       "Find Weakness",
       "Literacy",
       "Metallurgy",
-      "Smithing",
-      "Stealth"
+      "Smithing"
     ],
     "doubleSkills": []
   },
   {
     "race": "Gray Elf",
     "playableProfession": "Wizard",
-    "skills": ["Alchemy", "Concentration", "Dodge", "Healing", "Herbalism", "Ventriloquism"],
-    "doubleSkills": ["Literacy", "Stealth"]
+    "skills": [
+      "Alchemy",
+      "Concentration",
+      "Dodge",
+      "Healing",
+      "Herbalism",
+      "Stealth",
+      "Ventriloquism"
+    ],
+    "doubleSkills": ["Literacy"]
   },
   {
     "race": "Gray Elf",
     "playableProfession": "No Profession",
-    "skills": ["Dodge", "Literacy", "Stealth"],
+    "skills": ["Dodge", "Literacy"],
     "doubleSkills": []
   },
   {
@@ -1742,12 +1725,13 @@
       "Athletics",
       "Herbalism",
       "Literacy",
+      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "High Elf",
@@ -1823,7 +1807,6 @@
     "race": "High Elf",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Dodge",
@@ -1935,7 +1918,6 @@
       "Herbalism",
       "Literacy",
       "Stealth",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -1948,7 +1930,6 @@
     "skills": [
       "Alertness",
       "Appraising",
-      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Dodge",
@@ -2029,7 +2010,6 @@
       "Dodge",
       "Food Preservation",
       "Herbalism",
-      "Stealth",
       "Survival",
       "Two Weapon Combat",
       "Woodcraft"
@@ -2118,7 +2098,6 @@
     "race": "Human",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Fletchery",
@@ -2269,7 +2248,6 @@
       "Dodge",
       "Healing",
       "Herbalism",
-      "Survival",
       "Two Weapon Combat",
       "Woodcraft"
     ],
@@ -2281,7 +2259,6 @@
     "skills": [
       "Alertness",
       "Appraising",
-      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Food Preservation",
@@ -2373,12 +2350,13 @@
       "Food Preservation",
       "Gardening",
       "Herbalism",
+      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Stealth"]
+    "doubleSkills": []
   },
   {
     "race": "Hurthling",
@@ -2478,8 +2456,16 @@
   {
     "race": "Hurthling",
     "playableProfession": "Farmer",
-    "skills": ["Bridge Building", "Fletchery", "Herbalism", "Smithing", "Survival", "Woodcraft"],
-    "doubleSkills": ["Archery", "Cooking", "Food Preservation", "Gardening", "Stealth"]
+    "skills": [
+      "Archery",
+      "Bridge Building",
+      "Fletchery",
+      "Herbalism",
+      "Smithing",
+      "Survival",
+      "Woodcraft"
+    ],
+    "doubleSkills": ["Cooking", "Food Preservation", "Gardening", "Stealth"]
   },
   {
     "race": "Hurthling",
@@ -2634,7 +2620,6 @@
       "Healing",
       "Herbalism",
       "Stealth",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -2648,7 +2633,6 @@
       "Alertness",
       "Appraising",
       "Archery",
-      "Backstabbing",
       "Cooking",
       "Detect Traps",
       "Disarm Traps",
@@ -2704,8 +2688,8 @@
   {
     "race": "Mist Elf",
     "playableProfession": "Archer",
-    "skills": ["Archery", "Fletchery", "Literacy", "Necromancy"],
-    "doubleSkills": ["Alertness", "Concentration", "Dodge", "Stealth"]
+    "skills": ["Archery", "Fletchery", "Literacy", "Necromancy", "Stealth"],
+    "doubleSkills": ["Alertness", "Concentration", "Dodge"]
   },
   {
     "race": "Mist Elf",
@@ -2720,9 +2704,10 @@
       "Literacy",
       "Necromancy",
       "Pick Locks",
+      "Stealth",
       "Two Weapon Combat"
     ],
-    "doubleSkills": ["Alertness", "Dodge", "Stealth"]
+    "doubleSkills": ["Alertness", "Dodge"]
   },
   {
     "race": "Mist Elf",
@@ -2739,12 +2724,12 @@
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Mist Elf",
     "playableProfession": "Bard",
-    "skills": ["Alertness", "Concentration", "Dodge", "Literacy", "Music", "Necromancy", "Stealth"],
+    "skills": ["Alertness", "Concentration", "Dodge", "Literacy", "Music", "Necromancy"],
     "doubleSkills": []
   },
   {
@@ -2758,10 +2743,11 @@
       "Herbalism",
       "Literacy",
       "Necromancy",
+      "Stealth",
       "Survival",
       "Swimming"
     ],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Mist Elf",
@@ -2774,7 +2760,6 @@
       "Find Weakness",
       "Literacy",
       "Necromancy",
-      "Stealth",
       "Two Weapon Combat"
     ],
     "doubleSkills": ["Dodge"]
@@ -2789,7 +2774,6 @@
       "Healing",
       "Herbalism",
       "Necromancy",
-      "Stealth",
       "Survival",
       "Swimming",
       "Woodcraft"
@@ -2799,22 +2783,13 @@
   {
     "race": "Mist Elf",
     "playableProfession": "Duelist",
-    "skills": ["Athletics", "Find Weakness", "Healing", "Law", "Literacy", "Necromancy", "Stealth"],
+    "skills": ["Athletics", "Find Weakness", "Healing", "Law", "Literacy", "Necromancy"],
     "doubleSkills": ["Alertness", "Concentration", "Dodge"]
   },
   {
     "race": "Mist Elf",
     "playableProfession": "Elementalist",
-    "skills": [
-      "Alertness",
-      "Dodge",
-      "Gemology",
-      "Healing",
-      "Metallurgy",
-      "Necromancy",
-      "Stealth",
-      "Swimming"
-    ],
+    "skills": ["Alertness", "Dodge", "Gemology", "Healing", "Metallurgy", "Necromancy", "Swimming"],
     "doubleSkills": ["Concentration", "Literacy"]
   },
   {
@@ -2822,7 +2797,6 @@
     "playableProfession": "Farmer",
     "skills": [
       "Alertness",
-      "Archery",
       "Bridge Building",
       "Concentration",
       "Cooking",
@@ -2834,10 +2808,11 @@
       "Literacy",
       "Necromancy",
       "Smithing",
+      "Stealth",
       "Survival",
       "Woodcraft"
     ],
-    "doubleSkills": ["Stealth"]
+    "doubleSkills": []
   },
   {
     "race": "Mist Elf",
@@ -2851,23 +2826,16 @@
       "Literacy",
       "Metallurgy",
       "Necromancy",
+      "Stealth",
       "Swimming",
       "Two Weapon Combat"
     ],
-    "doubleSkills": ["Dodge", "Stealth"]
+    "doubleSkills": ["Dodge"]
   },
   {
     "race": "Mist Elf",
     "playableProfession": "Healer",
-    "skills": [
-      "Cooking",
-      "Dodge",
-      "Find Weakness",
-      "Healing",
-      "Herbalism",
-      "Necromancy",
-      "Stealth"
-    ],
+    "skills": ["Cooking", "Dodge", "Find Weakness", "Healing", "Herbalism", "Necromancy"],
     "doubleSkills": ["Alertness", "Concentration", "Literacy"]
   },
   {
@@ -2885,7 +2853,6 @@
       "Metallurgy",
       "Necromancy",
       "Pick Pockets",
-      "Stealth",
       "Survival"
     ],
     "doubleSkills": ["Literacy"]
@@ -2893,14 +2860,14 @@
   {
     "race": "Mist Elf",
     "playableProfession": "Mindcrafter",
-    "skills": ["Alertness", "Dodge", "Gemology", "Herbalism", "Music", "Necromancy"],
-    "doubleSkills": ["Concentration", "Literacy", "Stealth"]
+    "skills": ["Alertness", "Dodge", "Gemology", "Herbalism", "Music", "Necromancy", "Stealth"],
+    "doubleSkills": ["Concentration", "Literacy"]
   },
   {
     "race": "Mist Elf",
     "playableProfession": "Monk",
-    "skills": ["Athletics", "Find Weakness", "Healing", "Necromancy"],
-    "doubleSkills": ["Alertness", "Concentration", "Dodge", "Literacy", "Stealth"]
+    "skills": ["Athletics", "Find Weakness", "Healing", "Necromancy", "Stealth"],
+    "doubleSkills": ["Alertness", "Concentration", "Dodge", "Literacy"]
   },
   {
     "race": "Mist Elf",
@@ -2912,9 +2879,10 @@
       "Dodge",
       "Find Weakness",
       "Food Preservation",
-      "Herbalism"
+      "Herbalism",
+      "Stealth"
     ],
-    "doubleSkills": ["Concentration", "Literacy", "Necromancy", "Stealth"]
+    "doubleSkills": ["Concentration", "Literacy", "Necromancy"]
   },
   {
     "race": "Mist Elf",
@@ -2925,23 +2893,16 @@
       "Healing",
       "Law",
       "Necromancy",
+      "Stealth",
       "Swimming",
       "Two Weapon Combat"
     ],
-    "doubleSkills": ["Concentration", "Dodge", "Literacy", "Stealth"]
+    "doubleSkills": ["Concentration", "Dodge", "Literacy"]
   },
   {
     "race": "Mist Elf",
     "playableProfession": "Priest",
-    "skills": [
-      "Alertness",
-      "Detect Item Status",
-      "Dodge",
-      "Healing",
-      "Herbalism",
-      "Necromancy",
-      "Stealth"
-    ],
+    "skills": ["Alertness", "Detect Item Status", "Dodge", "Healing", "Herbalism", "Necromancy"],
     "doubleSkills": ["Concentration", "Literacy"]
   },
   {
@@ -2956,8 +2917,6 @@
       "Herbalism",
       "Literacy",
       "Necromancy",
-      "Stealth",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -2969,7 +2928,6 @@
     "playableProfession": "Thief",
     "skills": [
       "Appraising",
-      "Backstabbing",
       "Concentration",
       "Detect Traps",
       "Disarm Traps",
@@ -2977,9 +2935,10 @@
       "Literacy",
       "Necromancy",
       "Pick Locks",
-      "Pick Pockets"
+      "Pick Pockets",
+      "Stealth"
     ],
-    "doubleSkills": ["Alertness", "Stealth"]
+    "doubleSkills": ["Alertness"]
   },
   {
     "race": "Mist Elf",
@@ -2994,8 +2953,7 @@
       "Literacy",
       "Metallurgy",
       "Necromancy",
-      "Smithing",
-      "Stealth"
+      "Smithing"
     ],
     "doubleSkills": ["Concentration"]
   },
@@ -3009,14 +2967,15 @@
       "Healing",
       "Herbalism",
       "Necromancy",
+      "Stealth",
       "Ventriloquism"
     ],
-    "doubleSkills": ["Concentration", "Literacy", "Stealth"]
+    "doubleSkills": ["Concentration", "Literacy"]
   },
   {
     "race": "Mist Elf",
     "playableProfession": "No Profession",
-    "skills": ["Alertness", "Concentration", "Dodge", "Literacy", "Necromancy", "Stealth"],
+    "skills": ["Alertness", "Concentration", "Dodge", "Literacy", "Necromancy"],
     "doubleSkills": []
   },
   {
@@ -3064,7 +3023,6 @@
       "Herbalism",
       "Metallurgy",
       "Mining",
-      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
@@ -3156,7 +3114,6 @@
     "race": "Orc",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Backstabbing",
       "Bridge Building",
       "Cooking",
@@ -3326,7 +3283,6 @@
       "Herbalism",
       "Metallurgy",
       "Mining",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -3339,6 +3295,7 @@
     "skills": [
       "Alertness",
       "Appraising",
+      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Find Weakness",
@@ -3348,7 +3305,7 @@
       "Pick Pockets",
       "Stealth"
     ],
-    "doubleSkills": ["Backstabbing"]
+    "doubleSkills": []
   },
   {
     "race": "Orc",
@@ -3431,11 +3388,12 @@
       "Detect Item Status",
       "Dodge",
       "Herbalism",
+      "Stealth",
       "Survival",
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Stealth", "Swimming"]
+    "doubleSkills": ["Swimming"]
   },
   {
     "race": "Ratling",
@@ -3528,7 +3486,6 @@
     "playableProfession": "Farmer",
     "skills": [
       "Appraising",
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Detect Item Status",
@@ -3684,7 +3641,6 @@
       "Healing",
       "Herbalism",
       "Stealth",
-      "Survival",
       "Two Weapon Combat",
       "Woodcraft"
     ],
@@ -3695,7 +3651,6 @@
     "playableProfession": "Thief",
     "skills": [
       "Alertness",
-      "Backstabbing",
       "Detect Item Status",
       "Detect Traps",
       "Disarm Traps",
@@ -3793,7 +3748,6 @@
       "Gemology",
       "Herbalism",
       "Mining",
-      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
@@ -3896,7 +3850,6 @@
     "race": "Troll",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Athletics",
       "Cooking",
       "Fletchery",
@@ -4068,7 +4021,6 @@
       "Healing",
       "Herbalism",
       "Mining",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -4082,7 +4034,6 @@
       "Alertness",
       "Appraising",
       "Athletics",
-      "Backstabbing",
       "Bridge Building",
       "Detect Traps",
       "Disarm Traps",
@@ -4138,13 +4089,13 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Archer",
     "skills": ["Alertness", "Archery", "Concentration", "Dodge", "Fletchery", "Stealth"],
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Assassin",
     "skills": [
       "Alchemy",
@@ -4161,13 +4112,12 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Barbarian",
     "skills": [
       "Athletics",
       "Dodge",
       "Herbalism",
-      "Stealth",
       "Survival",
       "Swimming",
       "Two Weapon Combat",
@@ -4175,21 +4125,21 @@
     ],
     "doubleSkills": []
   },
-  { "race": "No Race", "playableProfession": "Bard", "skills": ["Music"], "doubleSkills": [] },
+  { "race": "No race", "playableProfession": "Bard", "skills": ["Music"], "doubleSkills": [] },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Beastfighter",
     "skills": ["Athletics", "Dodge", "Healing", "Herbalism", "Stealth", "Survival", "Swimming"],
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Chaos Knight",
     "skills": ["Athletics", "Backstabbing", "Dodge", "Find Weakness", "Two Weapon Combat"],
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Druid",
     "skills": [
       "Concentration",
@@ -4204,7 +4154,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Duelist",
     "skills": [
       "Alertness",
@@ -4218,16 +4168,15 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Elementalist",
     "skills": ["Concentration", "Gemology", "Healing", "Literacy", "Metallurgy", "Swimming"],
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Farmer",
     "skills": [
-      "Archery",
       "Bridge Building",
       "Cooking",
       "Fletchery",
@@ -4242,7 +4191,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Fighter",
     "skills": [
       "Archery",
@@ -4257,7 +4206,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Healer",
     "skills": [
       "Alertness",
@@ -4271,7 +4220,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Merchant",
     "skills": [
       "Alchemy",
@@ -4287,13 +4236,13 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Mindcrafter",
     "skills": ["Concentration", "Gemology", "Herbalism", "Literacy", "Music", "Stealth"],
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Monk",
     "skills": [
       "Alertness",
@@ -4308,7 +4257,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Necromancer",
     "skills": [
       "Alchemy",
@@ -4324,7 +4273,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Paladin",
     "skills": [
       "Athletics",
@@ -4340,13 +4289,13 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Priest",
     "skills": ["Concentration", "Detect Item Status", "Healing", "Herbalism", "Literacy"],
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Ranger",
     "skills": [
       "Alertness",
@@ -4356,7 +4305,6 @@
       "Food Preservation",
       "Healing",
       "Herbalism",
-      "Survival",
       "Swimming",
       "Two Weapon Combat",
       "Woodcraft"
@@ -4364,12 +4312,11 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Thief",
     "skills": [
       "Alertness",
       "Appraising",
-      "Backstabbing",
       "Detect Traps",
       "Disarm Traps",
       "Pick Locks",
@@ -4379,7 +4326,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Weaponsmith",
     "skills": [
       "Appraising",
@@ -4393,7 +4340,7 @@
     "doubleSkills": []
   },
   {
-    "race": "No Race",
+    "race": "No race",
     "playableProfession": "Wizard",
     "skills": [
       "Alchemy",
@@ -4406,5 +4353,5 @@
     ],
     "doubleSkills": []
   },
-  { "race": "No Race", "playableProfession": "No Profession", "skills": [], "doubleSkills": [] }
+  { "race": "No race", "playableProfession": "No Profession", "skills": [], "doubleSkills": [] }
 ]

@@ -147,7 +147,7 @@ const skillsList = [
     name: 'Archery',
     description: 'Grantsmissileattackbonuses',
     races: ['Hurthling'],
-    professions: ['Archer', 'Assassin', ' Farmer', 'Fighter', 'Ranger'],
+    professions: ['Archer', 'Assassin', 'Farmer', 'Fighter', 'Ranger'],
     inGame: false
   },
   {
@@ -171,7 +171,7 @@ const skillsList = [
     name: 'Backstabbing',
     description: 'Grantsachancetoinflictbonusdamageonunawareopponents',
     races: ['Orc'],
-    professions: ['Assassin', 'Chaos Knight', ' Thief'],
+    professions: ['Assassin', 'Chaos Knight', 'Thief'],
     inGame: true
   },
   {
@@ -448,16 +448,16 @@ const skillsList = [
     description: 'Grantsachancetonotbedetectedbymonsters/NPCs',
     races: [
       'Dark Elf',
-      ' Gray Elf',
+      'Gray Elf',
       'High Elf',
       'Hurthling',
-      ' Mist Elf',
+      'Mist Elf',
       'Ratling'
     ],
     professions: [
       'Archer',
       'Assassin',
-      ' Barbarian',
+      'Barbarian',
       'Beastfighter',
       'Farmer',
       'Fighter',
@@ -480,7 +480,7 @@ const skillsList = [
       'Druid',
       'Farmer',
       'Merchant',
-      'Ranger(oranycharacterbornunderFalcon)'
+      'Ranger'
     ],
     inGame: false
   },
@@ -537,43 +537,44 @@ const skillsList = [
   }
 ]
 
-// const allCombinationsFormula = () => {
-//   let allCombosArray = []
-//   playableRaces.forEach(race => {
-//     playableProfessions.forEach(playableProfession => {
-//       allCombosArray.push({
-//         race,
-//         playableProfession,
-//         skills: [],
-//         doubleSkills: []
-//       })
-//     })
-//   })
+const allCombinationsFormula = () => {
+  let allCombosArray = []
+  playableRaces.forEach(race => {
+    playableProfessions.forEach(playableProfession => {
+      allCombosArray.push({
+        race,
+        playableProfession,
+        skills: [],
+        doubleSkills: []
+      })
+    })
+  })
 
-//   skillsList.forEach(skill => {
-//     allCombosArray.forEach(combo => {
-//       if (
-//         skill.races.includes(combo.race) &&
-//         skill.professions.includes(combo.playableProfession)
-//       ) {
-//         return combo.doubleSkills.push(skill.name)
-//       }
+  skillsList.forEach(skill => {
+    allCombosArray.forEach(combo => {
+      if (
+        skill.races.includes(combo.race) &&
+        skill.professions.includes(combo.playableProfession)
+      ) {
+        return combo.doubleSkills.push(skill.name)
+      }
 
-//       if (
-//         skill.races.includes(combo.race) ||
-//         skill.professions.includes(combo.playableProfession)
-//       ) {
-//         return combo.skills.push(skill.name)
-//       }
-//     })
-//   })
+      if (
+        skill.races.includes(combo.race) ||
+        skill.professions.includes(combo.playableProfession)
+      ) {
+        return combo.skills.push(skill.name)
+      }
+    })
+  })
 
-//   return allCombosArray
-// }
+  return allCombosArray
+}
 
 export {
   raceObjects,
   playableRaces,
   playableProfessions,
-  skillsList
+  skillsList,
+  allCombinationsFormula
 }
