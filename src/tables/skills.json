@@ -291,12 +291,6 @@
     "doubleSkills": ["Stealth"]
   },
   {
-    "race": "Dark Elf",
-    "playableProfession": "No Profession",
-    "skills": ["Alertness", "Find Weakness", "Stealth"],
-    "doubleSkills": []
-  },
-  {
     "race": "Drakeling",
     "playableProfession": "Archer",
     "skills": [
@@ -657,12 +651,6 @@
       "Swimming",
       "Ventriloquism"
     ],
-    "doubleSkills": []
-  },
-  {
-    "race": "Drakeling",
-    "playableProfession": "No Profession",
-    "skills": ["Alertness", "Food Preservation", "Music", "Swimming"],
     "doubleSkills": []
   },
   {
@@ -1038,12 +1026,6 @@
       "Stealth",
       "Ventriloquism"
     ],
-    "doubleSkills": []
-  },
-  {
-    "race": "Dwarf",
-    "playableProfession": "No Profession",
-    "skills": ["Detect Traps", "Metallurgy", "Mining", "Smithing"],
     "doubleSkills": []
   },
   {
@@ -1434,12 +1416,6 @@
     "doubleSkills": ["Ventriloquism"]
   },
   {
-    "race": "Gnome",
-    "playableProfession": "No Profession",
-    "skills": ["Gemology", "Mining", "Pick Pockets", "Ventriloquism"],
-    "doubleSkills": []
-  },
-  {
     "race": "Gray Elf",
     "playableProfession": "Archer",
     "skills": ["Alertness", "Archery", "Concentration", "Fletchery", "Literacy"],
@@ -1708,12 +1684,6 @@
     "doubleSkills": ["Literacy", "Stealth"]
   },
   {
-    "race": "Gray Elf",
-    "playableProfession": "No Profession",
-    "skills": ["Dodge", "Literacy", "Stealth"],
-    "doubleSkills": []
-  },
-  {
     "race": "High Elf",
     "playableProfession": "Archer",
     "skills": ["Alertness", "Archery", "Concentration", "Fletchery", "Literacy"],
@@ -1980,12 +1950,6 @@
     "playableProfession": "Wizard",
     "skills": ["Alchemy", "Concentration", "Dodge", "Healing", "Herbalism", "Ventriloquism"],
     "doubleSkills": ["Literacy", "Stealth"]
-  },
-  {
-    "race": "High Elf",
-    "playableProfession": "No Profession",
-    "skills": ["Dodge", "Literacy", "Stealth"],
-    "doubleSkills": []
   },
   {
     "race": "Human",
@@ -2322,12 +2286,6 @@
       "Swimming",
       "Ventriloquism"
     ],
-    "doubleSkills": []
-  },
-  {
-    "race": "Human",
-    "playableProfession": "No Profession",
-    "skills": ["Food Preservation", "Swimming"],
     "doubleSkills": []
   },
   {
@@ -2696,12 +2654,6 @@
     "doubleSkills": ["Stealth"]
   },
   {
-    "race": "Hurthling",
-    "playableProfession": "No Profession",
-    "skills": ["Archery", "Cooking", "Food Preservation", "Gardening", "Stealth"],
-    "doubleSkills": []
-  },
-  {
     "race": "Mist Elf",
     "playableProfession": "Archer",
     "skills": ["Archery", "Fletchery", "Literacy", "Necromancy"],
@@ -3012,12 +2964,6 @@
       "Ventriloquism"
     ],
     "doubleSkills": ["Concentration", "Literacy", "Stealth"]
-  },
-  {
-    "race": "Mist Elf",
-    "playableProfession": "No Profession",
-    "skills": ["Alertness", "Concentration", "Dodge", "Literacy", "Necromancy", "Stealth"],
-    "doubleSkills": []
   },
   {
     "race": "Orc",
@@ -3383,12 +3329,6 @@
     "doubleSkills": []
   },
   {
-    "race": "Orc",
-    "playableProfession": "No Profession",
-    "skills": ["Backstabbing", "Find Weakness", "Metallurgy", "Mining"],
-    "doubleSkills": []
-  },
-  {
     "race": "Ratling",
     "playableProfession": "Archer",
     "skills": [
@@ -3399,6 +3339,7 @@
       "Detect Item Status",
       "Dodge",
       "Fletchery",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": ["Stealth"]
@@ -3417,6 +3358,7 @@
       "Dodge",
       "Find Weakness",
       "Pick Locks",
+      "Survival",
       "Swimming",
       "Two Weapon Combat"
     ],
@@ -3431,31 +3373,22 @@
       "Detect Item Status",
       "Dodge",
       "Herbalism",
-      "Survival",
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Stealth", "Swimming"]
+    "doubleSkills": ["Stealth", "Survival", "Swimming"]
   },
   {
     "race": "Ratling",
     "playableProfession": "Bard",
-    "skills": ["Appraising", "Detect Item Status", "Music", "Stealth", "Swimming"],
+    "skills": ["Appraising", "Detect Item Status", "Music", "Stealth", "Survival", "Swimming"],
     "doubleSkills": []
   },
   {
     "race": "Ratling",
     "playableProfession": "Beastfighter",
-    "skills": [
-      "Appraising",
-      "Athletics",
-      "Detect Item Status",
-      "Dodge",
-      "Healing",
-      "Herbalism",
-      "Survival"
-    ],
-    "doubleSkills": ["Stealth", "Swimming"]
+    "skills": ["Appraising", "Athletics", "Detect Item Status", "Dodge", "Healing", "Herbalism"],
+    "doubleSkills": ["Stealth", "Survival", "Swimming"]
   },
   {
     "race": "Ratling",
@@ -3468,6 +3401,7 @@
       "Dodge",
       "Find Weakness",
       "Stealth",
+      "Survival",
       "Swimming",
       "Two Weapon Combat"
     ],
@@ -3485,10 +3419,9 @@
       "Herbalism",
       "Literacy",
       "Stealth",
-      "Survival",
       "Woodcraft"
     ],
-    "doubleSkills": ["Swimming"]
+    "doubleSkills": ["Survival", "Swimming"]
   },
   {
     "race": "Ratling",
@@ -3504,6 +3437,7 @@
       "Healing",
       "Law",
       "Stealth",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": []
@@ -3519,7 +3453,8 @@
       "Healing",
       "Literacy",
       "Metallurgy",
-      "Stealth"
+      "Stealth",
+      "Survival"
     ],
     "doubleSkills": ["Swimming"]
   },
@@ -3537,11 +3472,10 @@
       "Gardening",
       "Herbalism",
       "Smithing",
-      "Survival",
       "Swimming",
       "Woodcraft"
     ],
-    "doubleSkills": ["Stealth"]
+    "doubleSkills": ["Stealth", "Survival"]
   },
   {
     "race": "Ratling",
@@ -3554,6 +3488,7 @@
       "Dodge",
       "Find Weakness",
       "Metallurgy",
+      "Survival",
       "Two Weapon Combat"
     ],
     "doubleSkills": ["Stealth", "Swimming"]
@@ -3572,6 +3507,7 @@
       "Herbalism",
       "Literacy",
       "Stealth",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": []
@@ -3587,10 +3523,9 @@
       "Metallurgy",
       "Pick Pockets",
       "Stealth",
-      "Survival",
       "Swimming"
     ],
-    "doubleSkills": ["Appraising", "Detect Item Status"]
+    "doubleSkills": ["Appraising", "Detect Item Status", "Survival"]
   },
   {
     "race": "Ratling",
@@ -3603,6 +3538,7 @@
       "Herbalism",
       "Literacy",
       "Music",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": ["Stealth"]
@@ -3620,6 +3556,7 @@
       "Find Weakness",
       "Healing",
       "Literacy",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": ["Stealth"]
@@ -3636,6 +3573,7 @@
       "Herbalism",
       "Literacy",
       "Necromancy",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": ["Appraising", "Stealth"]
@@ -3652,6 +3590,7 @@
       "Healing",
       "Law",
       "Literacy",
+      "Survival",
       "Two Weapon Combat"
     ],
     "doubleSkills": ["Stealth", "Swimming"]
@@ -3666,6 +3605,7 @@
       "Herbalism",
       "Literacy",
       "Stealth",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": ["Detect Item Status"]
@@ -3684,11 +3624,10 @@
       "Healing",
       "Herbalism",
       "Stealth",
-      "Survival",
       "Two Weapon Combat",
       "Woodcraft"
     ],
-    "doubleSkills": ["Swimming"]
+    "doubleSkills": ["Survival", "Swimming"]
   },
   {
     "race": "Ratling",
@@ -3701,6 +3640,7 @@
       "Disarm Traps",
       "Pick Locks",
       "Pick Pockets",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": ["Appraising", "Stealth"]
@@ -3717,6 +3657,7 @@
       "Metallurgy",
       "Smithing",
       "Stealth",
+      "Survival",
       "Swimming"
     ],
     "doubleSkills": ["Appraising"]
@@ -3732,16 +3673,11 @@
       "Healing",
       "Herbalism",
       "Literacy",
+      "Survival",
       "Swimming",
       "Ventriloquism"
     ],
     "doubleSkills": ["Stealth"]
-  },
-  {
-    "race": "Ratling",
-    "playableProfession": "No Profession",
-    "skills": ["Appraising", "Detect Item Status", "Stealth", "Swimming"],
-    "doubleSkills": []
   },
   {
     "race": "Troll",
@@ -4130,281 +4066,5 @@
       "Ventriloquism"
     ],
     "doubleSkills": []
-  },
-  {
-    "race": "Troll",
-    "playableProfession": "No Profession",
-    "skills": ["Athletics", "Bridge Building", "Food Preservation", "Gemology", "Mining"],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Archer",
-    "skills": ["Alertness", "Archery", "Concentration", "Dodge", "Fletchery", "Stealth"],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Assassin",
-    "skills": [
-      "Alchemy",
-      "Alertness",
-      "Archery",
-      "Backstabbing",
-      "Detect Traps",
-      "Dodge",
-      "Find Weakness",
-      "Pick Locks",
-      "Stealth",
-      "Two Weapon Combat"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Barbarian",
-    "skills": [
-      "Athletics",
-      "Dodge",
-      "Herbalism",
-      "Stealth",
-      "Survival",
-      "Swimming",
-      "Two Weapon Combat",
-      "Woodcraft"
-    ],
-    "doubleSkills": []
-  },
-  { "race": "No Race", "playableProfession": "Bard", "skills": ["Music"], "doubleSkills": [] },
-  {
-    "race": "No Race",
-    "playableProfession": "Beastfighter",
-    "skills": ["Athletics", "Dodge", "Healing", "Herbalism", "Stealth", "Survival", "Swimming"],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Chaos Knight",
-    "skills": ["Athletics", "Backstabbing", "Dodge", "Find Weakness", "Two Weapon Combat"],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Druid",
-    "skills": [
-      "Concentration",
-      "Gardening",
-      "Healing",
-      "Herbalism",
-      "Literacy",
-      "Survival",
-      "Swimming",
-      "Woodcraft"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Duelist",
-    "skills": [
-      "Alertness",
-      "Athletics",
-      "Concentration",
-      "Dodge",
-      "Find Weakness",
-      "Healing",
-      "Law"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Elementalist",
-    "skills": ["Concentration", "Gemology", "Healing", "Literacy", "Metallurgy", "Swimming"],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Farmer",
-    "skills": [
-      "Archery",
-      "Bridge Building",
-      "Cooking",
-      "Fletchery",
-      "Food Preservation",
-      "Gardening",
-      "Herbalism",
-      "Smithing",
-      "Stealth",
-      "Survival",
-      "Woodcraft"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Fighter",
-    "skills": [
-      "Archery",
-      "Athletics",
-      "Dodge",
-      "Find Weakness",
-      "Metallurgy",
-      "Stealth",
-      "Swimming",
-      "Two Weapon Combat"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Healer",
-    "skills": [
-      "Alertness",
-      "Concentration",
-      "Cooking",
-      "Find Weakness",
-      "Healing",
-      "Herbalism",
-      "Literacy"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Merchant",
-    "skills": [
-      "Alchemy",
-      "Appraising",
-      "Detect Item Status",
-      "Gemology",
-      "Herbalism",
-      "Literacy",
-      "Metallurgy",
-      "Pick Pockets",
-      "Survival"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Mindcrafter",
-    "skills": ["Concentration", "Gemology", "Herbalism", "Literacy", "Music", "Stealth"],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Monk",
-    "skills": [
-      "Alertness",
-      "Athletics",
-      "Concentration",
-      "Dodge",
-      "Find Weakness",
-      "Healing",
-      "Literacy",
-      "Stealth"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Necromancer",
-    "skills": [
-      "Alchemy",
-      "Appraising",
-      "Concentration",
-      "Find Weakness",
-      "Food Preservation",
-      "Herbalism",
-      "Literacy",
-      "Necromancy",
-      "Stealth"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Paladin",
-    "skills": [
-      "Athletics",
-      "Concentration",
-      "Dodge",
-      "Healing",
-      "Law",
-      "Literacy",
-      "Stealth",
-      "Swimming",
-      "Two Weapon Combat"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Priest",
-    "skills": ["Concentration", "Detect Item Status", "Healing", "Herbalism", "Literacy"],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Ranger",
-    "skills": [
-      "Alertness",
-      "Archery",
-      "Athletics",
-      "Dodge",
-      "Food Preservation",
-      "Healing",
-      "Herbalism",
-      "Survival",
-      "Swimming",
-      "Two Weapon Combat",
-      "Woodcraft"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Thief",
-    "skills": [
-      "Alertness",
-      "Appraising",
-      "Backstabbing",
-      "Detect Traps",
-      "Disarm Traps",
-      "Pick Locks",
-      "Pick Pockets",
-      "Stealth"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Weaponsmith",
-    "skills": [
-      "Appraising",
-      "Athletics",
-      "Concentration",
-      "Detect Traps",
-      "Find Weakness",
-      "Metallurgy",
-      "Smithing"
-    ],
-    "doubleSkills": []
-  },
-  {
-    "race": "No Race",
-    "playableProfession": "Wizard",
-    "skills": [
-      "Alchemy",
-      "Concentration",
-      "Healing",
-      "Herbalism",
-      "Literacy",
-      "Stealth",
-      "Ventriloquism"
-    ],
-    "doubleSkills": []
-  },
-  { "race": "No Race", "playableProfession": "No Profession", "skills": [], "doubleSkills": [] }
+  }
 ]

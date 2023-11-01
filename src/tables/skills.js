@@ -473,7 +473,7 @@ const skillsList = [
   {
     name: 'Survival',
     description: 'Canbeusedtofindfoodinthewilderness',
-    races: ['RatlingorbornunderFalcon'],
+    races: ['Ratling'],
     professions: [
       'Barbarian',
       'Beastfighter',
